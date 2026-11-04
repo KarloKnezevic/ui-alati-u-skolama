@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "properties": {
+    "naslov": { "type": "string",
+                "description": "Naslov, do 8 riječi" },
+    "uvod":   { "type": "string",
+                "description": "Dvije rečenice o interesu" },
+    "zadaci": {
+      "type": "array", "minItems": 5, "maxItems": 5,
+      "items": {
+        "type": "object",
+        "properties": {
+          "tekst":    { "type": "string" },
+          "rjesenje": { "type": "string",
+                        "description": "Rezultat i postupak" },
+          "razina":   { "type": "string", "enum":
+            ["prisjećanje", "razumijevanje", "primjena"] }
+        },
+        "required": ["tekst", "rjesenje", "razina"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["naslov", "uvod", "zadaci"],
+  "additionalProperties": false
+}

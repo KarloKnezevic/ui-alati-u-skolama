@@ -1,0 +1,21 @@
+// Razlomci: kviz za učenje (5. razred)
+::P1:: Pizza je izrezana na 8 jednakih komada. Pojedena su 3. Koji je dio pojeden? {
+  ~3/5 # Usporedio si pojedeno s ostatkom, a ne s cijelom pizzom.
+  =3/8 # Točno\: 3 od 8 jednakih dijelova.
+  ~5/8 # To je dio koji je ostao.
+  ~8/3 # Brojnik i nazivnik su zamijenjeni.
+}
+
+::P2:: Koji je razlomak veći, 3/8 ili 3/5? {
+  ~3/8 # Veći nazivnik ne znači veći razlomak.
+  =3/5 # Točno\: brojnici su jednaki, a petine su veće od osmina.
+  ~jednaki su # Gledaš samo brojnike.
+  ~ne može se odrediti bez crteža # Razlomke možeš usporediti i bez crteža.
+}
+
+::P3:: Brojevni pravac od 0 do 1 podijeljen je na 4 jednaka dijela. Točka je na trećoj crtici iza nule. Koji razlomak prikazuje? {
+  =3/4 # Točno\: tri od četiri jednaka dijela.
+  ~3/5 # Brojiš crtice, a ne dijelove.
+  ~4/3 # Brojnik i nazivnik su zamijenjeni.
+  ~3 # Crtice nisu prirodni brojevi, nego dijelovi jedinice.
+}

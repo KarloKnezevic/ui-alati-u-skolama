@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Prijava e-poštom
+    url: mailto:croai@croai.org
+    about: Nemate račun na GitHubu? Pišite na croai@croai.org.
+  - name: Stanje alata (živa inačica dodatka A)
+    url: https://github.com/KarloKnezevic/ui-alati-u-skolama/blob/main/STANJE_ALATA.md
+    about: Prije prijave provjerite je li se alat u međuvremenu promijenio.

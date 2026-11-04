@@ -1,0 +1,2 @@
+# lokalno.py rabi samo standardnu biblioteku Pythona; nema paketa za instalaciju.
+# Whisper: pip install -r requirements-whisper.txt (vidi README.md).

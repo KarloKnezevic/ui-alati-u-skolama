@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "knjiznica-5-razred": {
+      "command": "/Users/tomislav/knjiznica-mcp/.venv/bin/python",
+      "args": ["/Users/tomislav/knjiznica-mcp/posluzitelj.py"]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+Pet formula za analizu kviza od deset pitanja i dvadeset i četiri učenika
+(poglavlje 19, hrvatske postavke: argumente odvaja točka-zarez).
+
+Raspored tablice: redak 1 zaglavlje, redak 2 ključ (KLJUC), retci 3-26
+učenici; u stupcu A šifra, u stupcima B-K slova za P1-P10, stupci M-V
+bodovi b1-b10, stupac W ukupno.
+
+Bod za P1 (M3; kopirati udesno do V3, pa dolje do retka 26):
+=IF(B3=B$2;1;0)
+Ukupni rezultat učenika (W3; kopirati dolje):
+=SUM(M3:V3)
+Težina p za P1 (M28; kopirati udesno):
+=AVERAGE(M3:M26)
+Diskriminacija D za P1, tek NAKON razvrstavanja po stupcu W (M29):
+=AVERAGE(M3:M10)-AVERAGE(M19:M26)
+Koliko je učenika za P1 izabralo A (B31; slovo A upisano u A31):
+=COUNTIF(B$3:B$26;$A31)
+
+Znak $ drži redak ili stupac na mjestu kad formulu kopirate.
+Funkcija BROJ.AKO ne postoji: hrvatski Excel zadržava engleske nazive.

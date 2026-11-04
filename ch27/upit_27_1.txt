@@ -1,0 +1,20 @@
+ZADATAK: Iz bilješki ispod napravi tablicu "tko, što, do kada".
+
+PRAVILA:
+1. U tablicu stavi SAMO ono što je u bilješkama dogovoreno.
+2. Ono uz što piše "nije odlučeno", "možda" ili "spominjalo se"
+   NE ide u tablicu, nego pod naslov Otvoreno.
+3. Ako rok nije naveden, napiši: rok nije dogovoren.
+4. Ne dodaji osobe, zadatke ni datume kojih nema u bilješkama.
+5. Piši hrvatskim standardnim jezikom.
+
+OBLIK ODGOVORA:
+Tko | Što | Do kada
+(jedan redak po zadatku)
+Otvoreno:
+- (jedno pitanje po retku)
+
+PRIMJER RETKA (nije iz bilješki): uloga | zadatak | datum
+
+BILJEŠKE:
+[ZALIJEPITE BILJEŠKE]

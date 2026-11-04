@@ -1,0 +1,28 @@
+Vremenska oznaka;šifra;tjedan;što sam radio;alat ili uređaj;što je bilo teško;sigurnosna napomena;komentar;nacrt;odobreno;poslano
+2026-11-13 15:00:00;P-01;9;Spajao sam utičnicu i prekidač na probnoj ploči prema shemi.;odvijač, ispitivač napona;Nisam bio siguran koja je žica faza dok nisam provjerio ispitivačem.;Prije rada isključio sam osigurač i provjerio da nema napona.;;;;
+2026-11-13 16:07:13;P-02;9;Lemio sam otpornike i LED diode na pločicu za trepćuće svjetlo.;lemilica;Lem se hladio prije nego što bi dobro prionuo.;Lemilicu sam odlagao na stalak, radio uz uključen odsis.;;;;
+2026-11-13 17:14:26;P-03;9;Mjerio sam otpor i napon na sklopu s baterijom.;multimetar;Krivo sam postavio područje mjerenja pa je zaslon pokazivao 1.;Sklop je bio na 9 V, ništa opasno.;;;;
+2026-11-13 18:21:39;P-04;9;Bušio sam rupe za vijke u aluminijskom profilu.;stupna bušilica;Svrdlo je klizilo dok nisam zabio točku.;Radni komad stegnut u škripcu, zaštitne naočale.;;;;
+2026-11-13 19:28:52;P-06;9;Rezao sam kabelske kanalice na mjeru i postavljao ih na zid.;pila za metal, metar;Krivo sam izmjerio prvi komad pa je bio prekratak.;Rukavice pri rezanju, komadi bez oštrih rubova.;;;;
+2026-11-13 20:35:05;P-07;9;Ožičio sam razvodnu kutiju za tri rasvjetna mjesta.;kliješta za skidanje izolacije;Bilo je teško složiti sve žice u malu kutiju.;Radio sam bez napona, mentor je provjerio spoj prije uključivanja.;;;;
+2026-11-13 15:42:18;P-08;9;Pomagao sam pri postavljanju rasvjete u radionici.;ljestve;Nisam znao kojim redom se spajaju vodiči.;Netko je držao ljestve dok sam bio gore.;;;;
+2026-11-13 16:49:31;P-09;9;Mijenjao sam neispravan prekidač u hodniku.;odvijač, ispitivač napona;Vijak na stezaljci bio je zapečen i nije htio popustiti.;Isključen osigurač, na ormaru ostavljena oznaka da se radi.;;;;
+2026-11-13 17:56:44;P-10;9;Slagao sam strujni krug s releom i tipkalom.;probna ploča, napajanje 12 V;Relej se nije uključivao jer sam zamijenio priključke zavojnice.;Napajanje 12 V, prije promjene spoja isključeno.;;;;
+2026-11-14 18:03:57;P-11;9;Turpijao sam i brusio rubove limenih nosača.;turpija, kutna brusilica;Teško mi je bilo držati brusilicu mirno.;Naočale, rukavice i štitnik na brusilici, iskre od sebe.;;;;
+2026-11-14 19:10:10;P-12;9;Montirao sam nosače za kabele na strop.;bušilica, tiple;Rupa u betonu bila je preširoka pa tipla nije držala.;Maska protiv prašine i naočale, ljestve osigurane.;;;;
+2026-11-14 20:17:23;P-13;9;Ispitivao sam produžne kabele prije posudbe.;ispitivač instalacija;Nisam znao očitati rezultat mjerenja izolacije.;Oštećeni kabel odmah sam izdvojio i označio.;;;;
+2026-11-14 15:24:36;P-14;9;Lemio sam konektore na kabele za zvučnike.;lemilica, toplinske cijevi;Toplinska cijev se skupila prerano jer je bila preblizu lemilici.;Lemilica na stalku, provjetrena prostorija.;;;;
+2026-11-14 16:31:49;P-15;9;Postavljao sam razvodni ormarić u učionici za vježbe.;libela, bušilica;Ormarić je bio težak za držati ravno dok bušim.;Radili smo u paru, bušilica s graničnikom dubine.;;;;
+2026-11-14 17:38:02;P-16;9;Mjerio sam potrošnju uređaja u radionici.;mjerna kliješta;Mjerna kliješta treba staviti oko jednog vodiča, ne oko cijelog kabela.;Mjerio sam samo uz mentora.;;;;
+2026-11-14 18:45:15;P-17;9;Popravljao sam svjetiljku s neispravnim grlom.;odvijač, kliješta;Žice su bile prekratke za novo grlo.;Svjetiljka iskopčana iz utičnice cijelo vrijeme.;;;;
+2026-11-14 19:52:28;P-18;9;Spajao sam senzor pokreta na rasvjetu u hodniku.;odvijač, ispitivač napona;Senzor je palio svjetlo i danju dok nisam namjestio osjetljivost.;Isključen osigurač, provjera ispitivačem prije rada.;;;;
+2026-11-14 20:59:41;P-20;9;Rezao sam i skidao izolaciju s vodiča za vježbu.;kliješta za skidanje izolacije;Nekoliko puta sam zarezao bakar.;Rukavice, oštrica okrenuta od ruke.;;;;
+2026-11-15 15:06:54;P-21;9;Slagao sam spoj za izmjenično paljenje s dva prekidača.;probna ploča;Shema mi je bila nejasna dok mi mentor nije nacrtao tok struje.;Ploča na 24 V, bez mrežnog napona.;;;;
+2026-11-15 16:13:07;P-22;9;Čistio sam i sortirao alat i potrošni materijal.;ručni alat;Nismo imali popis gdje što stoji pa sam ga napravio.;Oštar alat spremljen u kutiju, ništa na podu.;;;;
+2026-11-15 17:20:20;P-23;9;Postavljao sam kabelske police u podrumu.;bušilica, ključevi;Bilo je mračno pa sam teško vidio oznake.;Prijenosna rasvjeta, kaciga zbog niskog stropa.;;;;
+2026-11-15 18:27:33;P-24;9;Mijenjao sam fluorescentne cijevi LED cijevima.;ljestve, odvijač;Trebalo je ukloniti prigušnicu, a nisam znao kako se to radi.;Isključena rasvjeta na ormaru, ljestve držao kolega.;;;;
+2026-11-15 19:34:46;P-25;9;Programirao sam vremenski relej za rasvjetu dvorišta.;vremenski relej;Upute su bile samo na engleskom.;Relej sam ugradio tek uz isključen napon.;;;;
+2026-11-15 20:41:59;P-27;9;Ispitivao sam diferencijalnu sklopku tipkom za test.;nema;Nisam znao zašto se tipka za test mora pritiskati redovito.;Prije testa javili smo svima da će nestati struje.;;;;
+2026-11-15 15:48:12;P-28;9;Lemio sam pločicu za mjerač temperature.;lemilica, pinceta;Sitni dijelovi su mi ispadali iz pincete.;Radio uz odsis, lemilica na stalku.;;;;
+2026-11-15 16:55:25;P-29;9;Bušio sam proboje u gips-kartonskom zidu za kutije.;bušilica s krunom;Kruna je skakala dok nisam bušio sporije.;Provjerio sam detektorom da u zidu nema kabela.;;;;
+2026-11-15 17:02:38;P-30;9;Pomagao sam pri mjerenju otpora uzemljenja.;mjerni instrument, sonde;Nisam razumio zašto se sonde zabijaju na određenu udaljenost.;Rad na otvorenom, kabeli složeni da se preko njih ne spotakne.;;;;

@@ -1,0 +1,38 @@
+name: Pogreška u knjizi ili primjeru
+description: Netočan podatak, recept koji više ne radi ili kôd koji javlja pogrešku.
+title: "[Pogreška] "
+labels: ["pogreška"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Hvala što javljate. Ne upisujte nikakve podatke o učenicima ni ključeve API-ja.
+  - type: input
+    id: mjesto
+    attributes:
+      label: Gdje?
+      description: Stranica u knjizi, broj recepta ili upita, odnosno mapa i datoteka u spremištu.
+      placeholder: "npr. str. 412, recept 23.2 ili ch23/pitajModel.gs"
+    validations:
+      required: true
+  - type: textarea
+    id: ocekivano
+    attributes:
+      label: Što ste očekivali?
+    validations:
+      required: true
+  - type: textarea
+    id: dogodilo
+    attributes:
+      label: Što se dogodilo?
+      description: Ako postoji poruka o pogrešci, zalijepite je ovdje.
+    validations:
+      required: true
+  - type: input
+    id: datum
+    attributes:
+      label: Datum i alat
+      description: Kada ste pokušali i s kojim alatom, planom ili modelom.
+      placeholder: "npr. 12. 1. 2027., Gemini, besplatni plan"
+    validations:
+      required: true

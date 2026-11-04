@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "properties": {
+    "kriteriji": {
+      "type": "array", "minItems": 4, "maxItems": 4,
+      "description": "Jedan element za svaki redak rubrike, istim redom",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kriterij": { "type": "string",
+                        "description": "Naziv kriterija iz rubrike" },
+          "razina":   { "type": "string", "enum":
+            ["početna", "razvojna", "ostvarena"] },
+          "dokaz":    { "type": "string",
+                        "description": "Kratak doslovni citat iz rada ili \"nema dokaza\"" }
+        },
+        "required": ["kriterij", "razina", "dokaz"],
+        "additionalProperties": false
+      }
+    },
+    "dobro":          { "type": "string",
+                        "description": "Što je dobro, jedna ili dvije rečenice" },
+    "poboljsati":     { "type": "string",
+                        "description": "Što poboljšati, jedna ili dvije rečenice" },
+    "sljedeci_korak": { "type": "string",
+                        "description": "Jedan konkretan sljedeći korak" }
+  },
+  "required": ["kriteriji", "dobro", "poboljsati", "sljedeci_korak"],
+  "additionalProperties": false
+}

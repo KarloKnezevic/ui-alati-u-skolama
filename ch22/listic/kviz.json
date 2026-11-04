@@ -1,0 +1,31 @@
+{
+  "naslov": "Razlomci: kviz za učenje",
+  "razred": "5.",
+  "pitanja": [
+    { "tekst": "Pizza je izrezana na 8 jednakih komada. Pojedena su 3. Koji je dio pojeden?",
+      "ponudeni": ["3/5", "3/8", "5/8", "8/3"],
+      "tocan": 1, "bodovi": 1, "ishod": "MAT OŠ A.5.3",
+      "objasnjenje": [
+        "Usporedio si pojedeno s ostatkom, a ne s cijelom pizzom.",
+        "Točno: 3 od 8 jednakih dijelova.",
+        "To je dio koji je ostao.",
+        "Brojnik i nazivnik su zamijenjeni."] },
+    { "tekst": "Koji je razlomak veći, 3/8 ili 3/5?",
+      "ponudeni": ["3/8", "3/5", "jednaki su",
+                   "ne može se odrediti bez crteža"],
+      "tocan": 1, "bodovi": 1, "ishod": "MAT OŠ A.5.3",
+      "objasnjenje": [
+        "Veći nazivnik ne znači veći razlomak.",
+        "Točno: brojnici su jednaki, a petine su veće od osmina.",
+        "Gledaš samo brojnike.",
+        "Razlomke možeš usporediti i bez crteža."] },
+    { "tekst": "Brojevni pravac od 0 do 1 podijeljen je na 4 jednaka dijela. Točka je na trećoj crtici iza nule. Koji razlomak prikazuje?",
+      "ponudeni": ["3/4", "3/5", "4/3", "3"],
+      "tocan": 0, "bodovi": 1, "ishod": "MAT OŠ A.5.3",
+      "objasnjenje": [
+        "Točno: tri od četiri jednaka dijela.",
+        "Brojiš crtice, a ne dijelove.",
+        "Brojnik i nazivnik su zamijenjeni.",
+        "Crtice nisu prirodni brojevi, nego dijelovi jedinice."] }
+  ]
+}

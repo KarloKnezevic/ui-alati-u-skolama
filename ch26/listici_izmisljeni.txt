@@ -1,0 +1,20 @@
+Dio cjeline | Pizzu dijelimo na jednake dijelove i zapisujemo koliko je dijelova pojedeno od ukupnog broja.
+Pola, trećina, četvrtina | Čokoladu i vrpcu dijelimo na dva, tri i četiri jednaka dijela i uspoređujemo veličine dijelova.
+Brojevni pravac do 1 | Dužinu od nule do jedan dijelimo na jednake dijelove i označavamo točke na crticama.
+Skupovi i Vennov dijagram | Učenike razvrstavamo po hobijima i crtamo dva kruga koja se djelomično preklapaju.
+Djeljivost s 2, 3, 5 i 9 | Po zadnjoj znamenki i zbroju znamenki provjeravamo dijeli li se broj bez ostatka.
+Prosti brojevi | Tražimo brojeve koji imaju samo dva djelitelja i slažemo Eratostenovo sito do sto.
+Izrazi u trgovini | Račun iz trgovine zapisujemo jednim izrazom sa zagradama i računamo redom.
+Decimalni brojevi i novac | Cijene u eurima i centima zapisujemo s decimalnim zarezom i uspoređujemo ih.
+Zaokruživanje | Duljine i cijene zaokružujemo na desetice, stotice i cijele brojeve.
+Linearna jednadžba s vagom | Vaga u ravnoteži pokazuje kako s obje strane oduzimamo isto i nalazimo nepoznati uteg.
+Kut i kutomjer | Kutomjerom mjerimo kutove na slikama i crtamo kut zadane veličine.
+Vrste kutova | Kutove razvrstavamo na šiljaste, prave, tupe i ispružene prema veličini.
+Volumen kutije za cipele | Kutiju punimo kockicama od jednog kubnog centimetra i brojimo koliko ih stane.
+Opseg školskog dvorišta | Koracima i metrom mjerimo rub dvorišta i zbrajamo duljine stranica.
+Gustoća tvari | Važemo jednake kocke od drva, plastike i metala i uspoređujemo njihove mase.
+Tablice i stupčasti grafovi | Podatke iz razredne ankete prikazujemo tablicom i stupčastim grafom.
+Simetrija u prirodi | Na listovima i krilima leptira tražimo os simetrije i crtamo zrcalnu sliku.
+Mjerne jedinice za duljinu | Pretvaramo milimetre, centimetre, metre i kilometre na primjerima iz svakodnevice.
+Redoslijed računskih operacija | Rješavamo izraze s množenjem, dijeljenjem i zagradama i otkrivamo zašto je redoslijed važan.
+Rimski brojevi | Čitamo godine na zgradama i satovima i zapisujemo ih rimskim znamenkama.

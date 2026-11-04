@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Čitalica</title>
+  <style>
+    /* Tamno na svijetlom, krupno, samo sistemski fontovi (ništa s interneta). */
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body { font-family: Arial, sans-serif;
+           background: #FFFDF5; color: #1A1A1A; }
+    section { min-height: 100vh; display: flex; flex-direction: column;
+              align-items: center; justify-content: center; gap: 4vh;
+              padding: 3vh 4vw; text-align: center; }
+    h1 { font-size: 9vw; margin: 0; }
+    h2 { font-size: 5vw; margin: 0; }
+    #rijec { font-size: 18vw; font-weight: bold; margin: 0;
+             line-height: 1.1; white-space: nowrap; }
+    .skriveno { display: none; }
+    button { font-family: inherit; font-size: 3.2vw; font-weight: bold;
+             padding: 1.6vh 3vw; border-radius: 12px; cursor: pointer;
+             border: 4px solid #1A1A1A; background: #FFFFFF; color: #1A1A1A; }
+    button.glavni { background: #1A1A1A; color: #FFFFFF; }
+    button:focus-visible { outline: 6px solid #0B3D91; outline-offset: 4px; }
+    .gumbi { display: flex; gap: 3vw; flex-wrap: wrap; justify-content: center; }
+    /* Razina se vidi riječima i oznakom s brojem, ne samo bojom. */
+    .oznaka { display: inline-flex; align-items: center; gap: 1vw;
+              font-size: 2.8vw; font-weight: bold; padding: 0.8vh 1.5vw;
+              border-radius: 10px; color: #FFFFFF; }
+    .oznaka .broj { display: inline-block; width: 1.6em; height: 1.6em;
+                    line-height: 1.6em; border-radius: 50%;
+                    background: #FFFFFF; color: #1A1A1A; }
+    .razina1 { background: #1B5E20; }   /* tamnozelena, bijeli tekst */
+    .razina2 { background: #0B3D91; }   /* tamnoplava, bijeli tekst */
+    #gornjiRed { position: fixed; top: 2vh; left: 3vw; right: 3vw;
+                 display: flex; justify-content: space-between;
+                 align-items: center; }
+    #brojac { font-size: 4vw; font-weight: bold; color: #1A1A1A; margin: 0; }
+    #podnozje { font-size: 1.6vw; color: #333333; margin-top: 4vh; }
+  </style>
+</head>
+<body>
+
+  <section id="pocetak">
+    <h1>Čitalica</h1>
+    <button id="kreni" class="glavni">Kreni</button>
+    <p id="podnozje">Čitalica 1.0 · 20. 11. 2026. · Jelena Babić, PŠ Bijeli Jasen ·
+      izrađeno uz pomoć UI alata · CC BY-SA 4.0</p>
+  </section>
+
+  <section id="razine" class="skriveno">
+    <h2>Odaberi razinu</h2>
+    <div class="gumbi">
+      <button id="razina1">Razina 1 – kratke riječi</button>
+      <button id="razina2">Razina 2 – duge riječi</button>
+    </div>
+  </section>
+
+  <section id="igra" class="skriveno">
+    <div id="gornjiRed">
+      <span id="oznakaRazine" class="oznaka"></span>
+      <p id="brojac"></p>
+    </div>
+    <p id="rijec"></p>
+    <div class="gumbi">
+      <button id="sljedeca" class="glavni">Sljedeća (razmaknica)</button>
+      <button id="cuj" class="skriveno">Čuj riječ</button>
+    </div>
+  </section>
+
+  <section id="kraj" class="skriveno">
+    <h2>Pročitali smo sve riječi!</h2>
+    <button id="novaIgra" class="glavni">Nova igra</button>
+  </section>
+
+  <script>
+    // RIJEČI: jedino mjesto koje učiteljica mijenja. Riječi su u navodnicima
+    // i odvojene zarezom, malim tiskanim slovima, kao u tekstu „Voda oko nas“.
+    const RIJECI = {
+      1: ["voda", "kiša", "potok", "bunar", "oblak", "kap", "more", "rijeka",
+          "lokva", "rosa"],
+      2: ["kapljica", "izvorište", "oborine", "isparavanje", "kruženje"]
+    };
+    const NAZIVI_RAZINA = { 1: "Razina 1 – kratke riječi",
+                            2: "Razina 2 – duge riječi" };
+
+    // Aplikacija ništa ne sprema: sve je samo u ovim varijablama i nestaje
+    // kad se stranica zatvori ili kad se pritisne Esc.
+    let red = [];     // riječi koje u krugu još nisu pročitane
+    let ukupno = 0;
+    let trenutna = "";
+    let zaslon = "pocetak";
+
+    // Prikazuje jedan od četiriju zaslona, ostale skriva.
+    function pokazi(id) {
+      for (const s of document.querySelectorAll("section")) {
+        s.classList.toggle("skriveno", s.id !== id);
+      }
+      zaslon = id;
+      const prvi = { pocetak: "kreni", razine: "razina1", kraj: "novaIgra" }[id];
+      if (prvi) document.getElementById(prvi).focus();
+    }
+
+    function pokreniRazinu(razina) {
+      // izmiješaj kopiju popisa za odabranu razinu
+      red = [...RIJECI[razina]].sort(() => Math.random() - 0.5);
+      ukupno = red.length;
+      const oznaka = document.getElementById("oznakaRazine");
+      oznaka.className = "oznaka razina" + razina;
+      oznaka.innerHTML = '<span class="broj">' + razina + "</span>";
+      oznaka.append(NAZIVI_RAZINA[razina]);
+      pokazi("igra");
+      document.activeElement.blur();   // razmaknica ne smije „kliknuti“ gumb
+      prikaziSljedecu();
+    }
+
+    function prikaziSljedecu() {
+      if (red.length === 0) { pokazi("kraj"); return; }
+      const rijec = red.shift();    // uzmi prvu i makni je
+      trenutna = rijec;
+      const polje = document.getElementById("rijec");
+      polje.textContent = rijec;
+      // duge riječi malo manje, da uvijek stanu u jedan redak
+      polje.style.fontSize = "min(" + Math.min(18, 150 / rijec.length) + "vw, 35vh)";
+      document.getElementById("brojac").textContent =
+        (ukupno - red.length) + " od " + ukupno;
+    }
+
+    function naPocetak() {          // Esc: prekinuti krug se ne pamti
+      red = [];
+      ukupno = 0;
+      if ("speechSynthesis" in window) speechSynthesis.cancel();
+      pokazi("pocetak");
+    }
+
+    // ČITANJE NAGLAS: samo hrvatskim glasom ugrađenim u računalo. Preglednik
+    // popis glasova učitava naknadno, pa ga tražimo i kad stigne
+    // (voiceschanged). Mrežne glasove ne rabimo jer bez interneta šute.
+    // Ako hrvatskog glasa nema, gumb „Čuj riječ“ ostaje skriven.
+    let hrGlas = null;
+    function nadiGlas() {
+      if (!("speechSynthesis" in window)) return;
+      const glasovi = speechSynthesis.getVoices() || [];
+      hrGlas = glasovi.find(g => g && g.lang &&
+        g.lang.toLowerCase().startsWith("hr") && g.localService) || null;
+      document.getElementById("cuj").classList.toggle("skriveno", !hrGlas);
+    }
+    function cuj() {
+      if (!hrGlas || !trenutna) return;
+      const izgovor = new SpeechSynthesisUtterance(trenutna);
+      izgovor.voice = hrGlas;
+      izgovor.lang = hrGlas.lang;
+      izgovor.rate = 0.8;
+      speechSynthesis.cancel();
+      speechSynthesis.speak(izgovor);
+    }
+    if ("speechSynthesis" in window) {
+      nadiGlas();
+      speechSynthesis.onvoiceschanged = nadiGlas;
+    }
+
+    // MIŠ
+    document.getElementById("kreni").onclick = () => pokazi("razine");
+    document.getElementById("razina1").onclick = () => pokreniRazinu(1);
+    document.getElementById("razina2").onclick = () => pokreniRazinu(2);
+    document.getElementById("sljedeca").onclick = prikaziSljedecu;
+    document.getElementById("cuj").onclick = cuj;
+    document.getElementById("novaIgra").onclick = () => pokazi("razine");
+
+    // TIPKOVNICA: Enter na početku, 1 i 2 za razinu, razmaknica ili
+    // strelica desno za sljedeću riječ, Esc za povratak na početak.
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") { naPocetak(); return; }
+      if (zaslon === "pocetak" && e.key === "Enter") {
+        e.preventDefault(); pokazi("razine");
+      } else if (zaslon === "razine" && (e.key === "1" || e.key === "2")) {
+        pokreniRazinu(Number(e.key));
+      } else if (zaslon === "igra" && (e.key === " " || e.key === "ArrowRight")) {
+        e.preventDefault();          // razmaknica uvijek znači „sljedeća“
+        if (e.key === " ") razmaknicaUIgri = true;
+        if (!e.repeat) prikaziSljedecu();
+      }
+    });
+    // Razmaknica na gumbu inače „klikne“ kad se tipka otpusti. Ako je
+    // pritisnuta u igri, otpuštanje ništa ne klikne: ni gumb u igri ni
+    // „Nova igra“ na zaslonu Kraj, koji se upravo pojavio.
+    let razmaknicaUIgri = false;
+    document.addEventListener("keyup", (e) => {
+      if (e.key === " " && razmaknicaUIgri) {
+        e.preventDefault();
+        razmaknicaUIgri = false;
+      }
+    });
+
+    pokazi("pocetak");               // fokus na „Kreni“: Enter odmah radi
+  </script>
+</body>
+</html>

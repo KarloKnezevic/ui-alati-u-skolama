@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Provjeravač referenci</title>
+  <style>
+    /* Samo sistemski fontovi; ništa se ne učitava s interneta. */
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; font-size: 1.05rem;
+           background: #FFFDF5; color: #1A1A1A; }
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1rem 3rem; }
+    h1 { margin-top: 0; }
+    textarea { width: 100%; min-height: 14rem; font: inherit; padding: 0.6rem;
+               border: 2px solid #1A1A1A; border-radius: 8px; }
+    button { font: inherit; cursor: pointer; border-radius: 8px;
+             padding: 0.4rem 0.8rem; border: 2px solid #1A1A1A;
+             background: #FFFFFF; color: #1A1A1A; }
+    button.glavni { background: #1A1A1A; color: #FFFFFF; font-weight: bold;
+                    padding: 0.6rem 1.2rem; }
+    button[aria-pressed="true"] { background: #0B3D91; border-color: #0B3D91;
+                                  color: #FFFFFF; }
+    button:focus-visible, a:focus-visible { outline: 4px solid #0B3D91;
+                                            outline-offset: 3px; }
+    a { color: #0B3D91; }
+    ol { padding-left: 1.6rem; }
+    li { margin: 0.9rem 0; }
+    .doi { font-family: "Courier New", monospace; word-break: break-all; }
+    .ocjene { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.4rem; }
+    .napomena { color: #333333; font-size: 0.95rem; }
+    #sazetak { font-weight: bold; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Provjeravač referenci</h1>
+  <p class="napomena">Zalijepite popis literature. Aplikacija pronađe DOI-je
+    i prikaže ih kao poveznice; ocjenu dajete vi. Ništa se ne sprema i ništa
+    se nikamo ne šalje: stranica otvara samo DOI koji sami kliknete.</p>
+
+  <label for="popis"><strong>Popis literature</strong></label>
+  <textarea id="popis" spellcheck="false"></textarea>
+  <p>
+    <button id="pronadi" class="glavni">Pronađi DOI-je</button>
+    <button id="ocisti">Očisti</button>
+  </p>
+
+  <p id="sazetak" aria-live="polite"></p>
+  <section id="sDoi" hidden>
+    <h2>DOI-ji</h2>
+    <ol id="doiji"></ol>
+  </section>
+  <section id="sBez" hidden>
+    <h2>Reference bez DOI-ja (provjera u katalogu knjižnice)</h2>
+    <ol id="bezDoija"></ol>
+  </section>
+
+  <p class="napomena">Provjeravač referenci 1.0 · studeni 2026. · Ante Vuković ·
+    izrađeno uz pomoć UI alata · licenca MIT. „Ne postoji“ nikad ne pišemo
+    prije nego što smo DOI pogledali i očima.</p>
+</main>
+
+<script>
+  // Uzorak prema Crossrefu: 10. + 4 do 9 znamenki + / + ostatak
+  const UZORAK_DOI = /10\.\d{4,9}\/[-._;()\/:A-Z0-9]+/gi;
+
+  function pronadiDoije(tekst) {
+    const nadeni = tekst.match(UZORAK_DOI) || [];  // svi pogoci
+    const ocisceni = nadeni.map(d => d.replace(/[.,;]+$/, ""));
+    return [...new Set(ocisceni)];                  // bez ponavljanja
+  }
+
+  // Reference bez DOI-ja: svaki neprazan redak u kojem uzorak ništa ne nađe.
+  function bezDoija(tekst) {
+    return tekst.split(/\r?\n/)
+      .map(r => r.trim())
+      .filter(r => r !== "" && (r.match(UZORAK_DOI) || []).length === 0);
+  }
+
+  const OCJENE = ["odgovara", "postoji, ali drugi rad", "ne postoji"];
+
+  // Jedna stavka: poveznica na doi.org i tri gumba za Antinu ocjenu.
+  // Ocjena postoji samo dok je stranica otvorena.
+  function stavkaDoi(doi) {
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.className = "doi";
+    a.href = "https://doi.org/" + encodeURI(doi);   // otvara se tek na klik
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    a.textContent = doi;
+    const ocjene = document.createElement("div");
+    ocjene.className = "ocjene";
+    OCJENE.forEach(o => {
+      const g = document.createElement("button");
+      g.textContent = o;
+      g.setAttribute("aria-pressed", "false");
+      g.onclick = () => {
+        ocjene.querySelectorAll("button")
+          .forEach(b => b.setAttribute("aria-pressed", String(b === g)));
+      };
+      ocjene.appendChild(g);
+    });
+    li.append(a, ocjene);
+    return li;
+  }
+
+  function pronadi() {
+    const tekst = document.getElementById("popis").value;
+    const doiji = pronadiDoije(tekst);
+    const bez = bezDoija(tekst);
+    const lDoi = document.getElementById("doiji");
+    const lBez = document.getElementById("bezDoija");
+    lDoi.innerHTML = "";
+    lBez.innerHTML = "";
+    doiji.forEach(d => lDoi.appendChild(stavkaDoi(d)));
+    bez.forEach(r => {
+      const li = document.createElement("li");
+      li.textContent = r;                  // tekst, nikad kao HTML
+      lBez.appendChild(li);
+    });
+    document.getElementById("sDoi").hidden = doiji.length === 0;
+    document.getElementById("sBez").hidden = bez.length === 0;
+    document.getElementById("sazetak").textContent =
+      "DOI-ja: " + doiji.length + " · redaka bez DOI-ja: " + bez.length;
+  }
+
+  document.getElementById("pronadi").onclick = pronadi;
+  document.getElementById("ocisti").onclick = () => {
+    document.getElementById("popis").value = "";
+    pronadi();
+    document.getElementById("sazetak").textContent = "";
+    document.getElementById("popis").focus();
+  };
+</script>
+</body>
+</html>

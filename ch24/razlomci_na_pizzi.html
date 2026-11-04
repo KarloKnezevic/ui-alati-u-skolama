@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Razlomci na pizzi</title>
+  <style>
+    /* Tamno na svijetlom, krupno, samo sistemski fontovi (ništa s interneta). */
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif;
+           background: #FFFDF5; color: #1A1A1A; }
+    main { max-width: 1100px; margin: 0 auto; padding: 3vh 4vw;
+           display: flex; flex-wrap: wrap; gap: 4vw; align-items: center;
+           justify-content: center; min-height: 100vh; }
+    h1 { font-size: 2.2rem; margin: 0 0 1rem; }
+    #pitanje { font-size: 2rem; font-weight: bold; margin: 0 0 1.5rem; }
+    #napredak { font-size: 1.2rem; color: #333333; margin: 0 0 1rem; }
+    svg { width: min(42vw, 60vh); height: auto; }
+    .odgovori { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+    button { font-family: inherit; cursor: pointer; border-radius: 12px;
+             border: 4px solid #1A1A1A; background: #FFFFFF; color: #1A1A1A; }
+    button:focus-visible { outline: 6px solid #0B3D91; outline-offset: 4px; }
+    .razlomak { width: 7rem; padding: 0.8rem 0; font-size: 2.6rem;
+                font-weight: bold; display: inline-flex; flex-direction: column;
+                align-items: center; line-height: 1.1; }
+    .razlomak .crta { width: 2.4rem; border-top: 4px solid currentColor;
+                      margin: 0.2rem 0; }
+    .razlomak.odabran { border-width: 7px; }
+    .glavni { font-size: 1.6rem; font-weight: bold; padding: 0.8rem 1.6rem;
+              background: #1A1A1A; color: #FFFFFF; margin-top: 1.5rem; }
+    #povratna { font-size: 1.6rem; min-height: 4.5rem; margin: 1.5rem 0 0;
+                max-width: 32rem; }
+    .skriveno { display: none; }
+    #podnozje { font-size: 0.9rem; color: #333333; width: 100%; text-align: center; }
+  </style>
+</head>
+<body>
+<main>
+  <div>
+    <!-- Crtež je u samoj datoteci (SVG). Adresa w3.org u skripti je samo
+         oznaka vrste crteža, ne preuzimanje: ništa se ne učitava s mreže. -->
+    <svg id="pizza" viewBox="-110 -110 220 220" role="img"
+         aria-labelledby="opisPizze"><title id="opisPizze"></title></svg>
+  </div>
+  <div>
+    <h1>Razlomci na pizzi</h1>
+    <p id="napredak"></p>
+    <p id="pitanje">Koliki je dio pizze pojeden?</p>
+    <div class="odgovori" id="odgovori"></div>
+    <p id="povratna" aria-live="polite"></p>
+    <button id="dalje" class="glavni skriveno">Sljedeći zadatak</button>
+  </div>
+  <p id="podnozje">Razlomci na pizzi 1.0 · studeni 2026. · Tomislav Perić ·
+    izrađeno uz pomoć UI alata · CC BY-SA 4.0</p>
+</main>
+
+<script>
+  // ZADACI: jedino mjesto koje učitelj mijenja. Na koliko je jednakih
+  // dijelova pizza izrezana i koliko je dijelova pojedeno. Pojedeno ne smije
+  // biti točno pola, jer bi se dva ponuđena odgovora poklopila.
+  const ZADACI = [
+    { dijelova: 8, pojedeno: 3 },
+    { dijelova: 6, pojedeno: 1 },
+    { dijelova: 4, pojedeno: 1 },
+    { dijelova: 5, pojedeno: 2 },
+    { dijelova: 8, pojedeno: 5 },
+    { dijelova: 10, pojedeno: 3 },
+    { dijelova: 3, pojedeno: 1 },
+    { dijelova: 12, pojedeno: 5 }
+  ];
+
+  // Ponuđeni odgovori: točan i dvije česte zablude (pogl. 16). Povratna
+  // informacija ne otkriva rješenje, nego upućuje na ono što treba brojiti.
+  function ponudi(z) {
+    const n = z.dijelova, e = z.pojedeno;
+    return [
+      { b: e, n: n, tocan: true,
+        poruka: "Točno! Pojedeno je " + e + " od " + n + " jednakih dijelova." },
+      { b: e, n: n - e, tocan: false,     // pojedeno prema preostalom
+        poruka: "Pogledaj ponovno: na koliko je jednakih dijelova " +
+                "podijeljena cijela pizza?" },
+      { b: n - e, n: n, tocan: false,     // dio koji je ostao
+        poruka: "Pogledaj ponovno: brojiš dijelove koji su ostali. " +
+                "Koliko je dijelova pojedeno?" }
+    ];
+  }
+
+  const SVG = "http://www.w3.org/2000/svg";   // oznaka vrste crteža (vidi gore)
+  let indeks = 0;
+
+  function nacrtajPizzu(z) {
+    const svg = document.getElementById("pizza");
+    svg.querySelectorAll("path, circle").forEach(el => el.remove());
+    document.getElementById("opisPizze").textContent =
+      "Pizza izrezana na " + z.dijelova + " jednakih dijelova; " +
+      z.pojedeno + " dijelova je pojedeno.";
+    const r = 100;
+    for (let i = 0; i < z.dijelova; i++) {
+      const a1 = (i / z.dijelova) * 2 * Math.PI - Math.PI / 2;
+      const a2 = ((i + 1) / z.dijelova) * 2 * Math.PI - Math.PI / 2;
+      const x1 = r * Math.cos(a1), y1 = r * Math.sin(a1);
+      const x2 = r * Math.cos(a2), y2 = r * Math.sin(a2);
+      const veliki = (a2 - a1) > Math.PI ? 1 : 0;
+      const kriska = document.createElementNS(SVG, "path");
+      kriska.setAttribute("d", "M0,0 L" + x1 + "," + y1 + " A" + r + "," + r +
+        " 0 " + veliki + " 1 " + x2 + "," + y2 + " Z");
+      const pojeden = i < z.pojedeno;
+      kriska.setAttribute("fill", pojeden ? "#FFFFFF" : "#F2C14E");
+      kriska.setAttribute("stroke", "#7A4A00");
+      kriska.setAttribute("stroke-width", "2.5");
+      if (pojeden) kriska.setAttribute("stroke-dasharray", "6 5");
+      svg.appendChild(kriska);
+    }
+  }
+
+  function razlomak(o) {
+    const g = document.createElement("button");
+    g.className = "razlomak";
+    g.setAttribute("aria-label", o.b + " " + (o.n === 1 ? "cijela" : "od " + o.n));
+    const gore = document.createElement("span"); gore.textContent = o.b;
+    const crta = document.createElement("span"); crta.className = "crta";
+    const dolje = document.createElement("span"); dolje.textContent = o.n;
+    g.append(gore, crta, dolje);
+    return g;
+  }
+
+  function prikaziZadatak() {
+    const z = ZADACI[indeks];
+    nacrtajPizzu(z);
+    document.getElementById("napredak").textContent =
+      "Zadatak " + (indeks + 1) + " od " + ZADACI.length;
+    document.getElementById("povratna").textContent = "";
+    document.getElementById("dalje").classList.add("skriveno");
+    const mjesto = document.getElementById("odgovori");
+    mjesto.innerHTML = "";
+    // izmiješaj redoslijed ponuđenih odgovora
+    const ponude = ponudi(z).sort(() => Math.random() - 0.5);
+    ponude.forEach(o => {
+      const g = razlomak(o);
+      g.onclick = () => odgovori(g, o);
+      mjesto.appendChild(g);
+    });
+    mjesto.firstChild.focus();
+  }
+
+  function odgovori(gumb, o) {
+    document.querySelectorAll(".razlomak").forEach(b => b.classList.remove("odabran"));
+    gumb.classList.add("odabran");
+    document.getElementById("povratna").textContent = o.poruka;
+    if (o.tocan) {
+      const dalje = document.getElementById("dalje");
+      dalje.textContent = indeks + 1 < ZADACI.length
+        ? "Sljedeći zadatak" : "Ispočetka";
+      dalje.classList.remove("skriveno");
+      dalje.focus();
+    }
+  }
+
+  document.getElementById("dalje").onclick = () => {
+    indeks = (indeks + 1) % ZADACI.length;
+    prikaziZadatak();
+  };
+
+  // Aplikacija ništa ne sprema i nikamo ne šalje: nema bodova ni rang-liste.
+  prikaziZadatak();
+</script>
+</body>
+</html>

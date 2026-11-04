@@ -1,0 +1,2 @@
+# Python primjeri u ovoj mapi rabe samo standardnu biblioteku (Python 3.10 ili noviji).
+# Nema paketa za instalaciju.
