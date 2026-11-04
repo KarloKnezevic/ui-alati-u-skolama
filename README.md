@@ -15,7 +15,7 @@
 [![Kôd](https://img.shields.io/badge/kôd-MIT-041966)](LICENSE)
 [![Sadržaj](https://img.shields.io/badge/predlošci-CC%20BY--NC%204.0-041966)](LICENCA.md)
 
-**[Preuzmite knjigu (PDF)](https://github.com/KarloKnezevic/ui-alati-u-skolama/releases/latest)** ·
+**[Preuzmite knjigu (PDF)](https://github.com/KarloKnezevic/ui-alati-u-skolama/releases/latest/download/Koristenje_UI_alata_u_skolama.pdf)** ·
 [Stanje alata](STANJE_ALATA.md) ·
 [Ispravci](ISPRAVCI.md) ·
 [Prijavite pogrešku](https://github.com/KarloKnezevic/ui-alati-u-skolama/issues/new/choose)
