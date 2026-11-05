@@ -17,20 +17,24 @@
 //              cijena: { ulaz: 0.10, izlaz: 0.50 }
 //      OpenAI: dobavljac: 'openai-responses',
 //              osnovniUrl: 'https://api.openai.com/v1',
-//              model: 'gpt-5-nano',
+//              model: 'gpt-6-luna',
 //              svojstvoKljuca: 'OPENAI_API_KEY',
-//              cijena: { ulaz: 0.05, izlaz: 0.40 }
+//              cijena: { ulaz: 0.10, izlaz: 0.50 }
 //    Ključ ide u Script Properties pod tim nazivom, nikad u kôd.
 // Obje funkcije vraćaju isti „račun“ (racun_, neuspjeh_ iz pitajModel.gs).
 // OpenAI u strogom načinu (strict: true) traži da svaki objekt u shemi ima
 // "additionalProperties": false i da su sva polja u "required". Shema
 // listića to ima; malu shemu iz probniPoziv za probu dopunite.
+// Claude (studeni 2026.) ne podržava minItems veći od 1 ni maxItems (inače
+// vraća 400), pa ih pitajClaude_ prije slanja uklanja; broj zadataka tada
+// provjerava provjeriListic_. Zaglavlje anthropic-version: 2023-06-01 i dalje
+// vrijedi; u novijoj inačici 2026-10-21 zahtjev ne smije slati temperature.
 
 function pitajClaude_(upit, shema, kljuc) {
   const tijelo = { model: POSTAVKE.model, max_tokens: 4000,
     messages: [{ role: 'user', content: upit }] };
   if (shema) tijelo.output_config = {
-    format: { type: 'json_schema', schema: shema } };
+    format: { type: 'json_schema', schema: zaClaude_(shema) } };
   const odg = UrlFetchApp.fetch(POSTAVKE.osnovniUrl + '/messages', {
     method: 'post', contentType: 'application/json',
     headers: { 'x-api-key': kljuc, 'anthropic-version': '2023-06-01' },
@@ -42,6 +46,15 @@ function pitajClaude_(upit, shema, kljuc) {
     return d.type === 'text'; })[0];
   return racun_(dio ? dio.text : '', t.input_tokens || 0,
     t.output_tokens || 0);
+}
+
+// Kopija sheme bez ograničenja broja elemenata koja Claude ne prima.
+function zaClaude_(shema) {
+  return JSON.parse(JSON.stringify(shema), function (kljuc, vrijednost) {
+    if (kljuc === 'maxItems') return undefined;
+    if (kljuc === 'minItems' && vrijednost > 1) return undefined;
+    return vrijednost;
+  });
 }
 
 function pitajOpenAIResponses_(upit, shema, kljuc) {

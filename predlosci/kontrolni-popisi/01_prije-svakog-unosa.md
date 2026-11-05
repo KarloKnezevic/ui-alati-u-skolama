@@ -9,8 +9,8 @@
 - ☐ Je li treniranje isključeno, odnosno radite li u privremenom razgovoru?
 - ☐ Jeste li uklonili metapodatke, komentare i praćenje promjena iz dokumenta?
 - ☐ Bi li roditelj pristao da ovo pročita tvrtka koja vodi alat?
-- ☐ Jeste li najprije pokušali isto postići bez podataka: s izmišljenim primjerom, općim opisom ili praznim predloškom?
+- ☐ Jeste li najprije pokušali isto postići bez podataka: izmišljenim primjerom, općim opisom ili praznim predloškom?
 
 ---
 
-*Izvor: poglavlje 4 · stanje: studeni 2026. · jedno „ne“ ili „ne znam“ znači: ne unosite.*
+*Izvor: poglavlje 4 · stanje: studeni 2026. · jedno „ne“ ili „ne znam“ znači: ne unosite · ako je već uneseno, odmah javite službeniku za zaštitu podataka; o povredi koja nosi rizik škola obavještava AZOP najkasnije 72 sata nakon saznanja.*

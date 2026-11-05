@@ -1,4 +1,4 @@
-# Poglavlje 23: API, strukturirani izlaz i trideset listića
+# Poglavlje 23: Bez prozora za razgovor: API, strukturirani izlaz i trideset listića
 
 Apps Script za poziv modelu bez prozora za razgovor. `pitajModel.gs` sadrži
 `POSTAVKE`, `pitajModel`, drugu provedbu `pitajOpenAI_`, pomoćne funkcije

@@ -1,4 +1,4 @@
-# Poglavlje 27: model na vlastitom računalu
+# Poglavlje 27: Model na vlastitom računalu: lokalni modeli, glas i slika bez oblaka
 
 `lokalno.py` je puna inačica funkcije `pitaj_model`: prema polju
 `dobavljac` u `POSTAVKE` šalje upit Ollami na ovom računalu

@@ -2,9 +2,9 @@
 
 *Plan za ispis · dio II knjige (poglavlja 6–8) · 90 minuta*
 
-Druga radionica počinje pogreškama koje su kolege donijele i završava pokusom koji je aktiv proveo zajedno.
+Druga radionica počinje pogreškama koje su kolege donijele i završava pokusom koji aktiv provodi zajedno. Prati dio II (poglavlja 6–8).
 
-**Za koga.** Sudionici prve radionice, bilo koji predmet; najbolje ide u parovima kolega istog predmeta.
+**Za koga.** Sudionici prve radionice, bilo koji predmet; najbolje je raditi u parovima kolega istog predmeta.
 
 **Ishodi.** Sudionik
 1. preoblikuje upit od jedne rečenice u upit s pet elemenata i usporedi odgovore;
@@ -21,7 +21,7 @@ Druga radionica počinje pogreškama koje su kolege donijele i završava pokusom
 |---|---|---|
 | 10 | uvod | Pogreške s kartica i iz prvog tjedna zapisujemo na ploču. |
 | 15 | demonstracija | „Od jedne rečenice do upita s pet elemenata“ (poglavlje 6): isti zadatak dvaput, odgovori jedan uz drugi. |
-| 40 | rad u parovima | „Lov na halucinacije u deset minuta“ na odgovoru iz demonstracije ili iz vlastitog predmeta (15 min). Zatim pokus pristranosti: parovi dijele uvjete (dva imena i kontrolni uvjet bez imena), svaki ponavlja svoj uvjet u novim razgovorima i upisuje kategorije u zajedničku tablicu (25 min). |
+| 40 | rad u parovima | „Lov na halucinacije u deset minuta“ na odgovoru iz demonstracije ili iz vlastitog predmeta (15 min). Zatim pokus pristranosti: parovi među sobom podijele uvjete (dva imena i kontrolni uvjet bez imena), svaki par ponavlja svoj uvjet u novim razgovorima i upisuje kategorije u zajedničku tablicu (25 min). |
 | 15 | rasprava | Zbirna tablica. Što pokus može pokazati, a što ne: malo ponavljanja, jedan alat, jedan dan. |
 | 10 | refleksija | Izlazna kartica. |
 

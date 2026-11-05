@@ -2,12 +2,12 @@
 
 *Kontrolni popis iz dodatka C knjige. Kada: prije prve uporabe ili pretplate. Obrazloženje: poglavlje 5.*
 
-- ☐ **Cijena.** Koliko stoji nastavnika, mjesečno i godišnje, s PDV-om? (cjenik)
+- ☐ **Cijena.** Koliko nastavnik plaća, mjesečno i godišnje, s PDV-om? (cjenik)
 - ☐ **Besplatna razina.** Koja su točno ograničenja: kvota, duljina unosa, oglasi? (cjenik, česta pitanja)
-- ☐ **Hrvatski.** Ima li sučelje na hrvatskom i kako piše kad ga isprobate na svojem tekstu? (postavke; vlastita proba, [popis 5](05_hrvatski-jezik.md))
-- ☐ **Podaci.** Rabi li razgovore za treniranje, može li se to isključiti, postoji li ugovor sa školom? (politika privatnosti, uvjeti)
-- ☐ **Prijava.** Možete li se prijaviti školskim računom preko AAI@EduHr? (prijava)
-- ☐ **Dob.** Koja je donja dobna granica i što to znači uz hrvatsku dobnu granicu za privolu od 16 godina? (uvjeti korištenja)
+- ☐ **Hrvatski.** Ima li sučelje na hrvatskom i kako piše hrvatski kad ga isprobate na svojem tekstu? (postavke; vlastita proba, [popis 5](05_hrvatski-jezik.md))
+- ☐ **Podaci.** Rabi li razgovore za treniranje, može li se to isključiti i postoji li ugovor sa školom? (politika privatnosti, uvjeti)
+- ☐ **Prijava.** Možete li se prijaviti školskim računom AAI@EduHr? (zaslon za prijavu)
+- ☐ **Dob.** Koju najmanju dob traže uvjeti i što to znači uz hrvatsku dobnu granicu za privolu od 16 godina? (uvjeti korištenja)
 - ☐ **Izlazak.** Možete li izvesti svoj rad (kvizove, upute, dokumente) ako alat promijeni cjenik ili nestane? (postavke, pomoć)
 - ☐ Uz svaki odgovor upišite izvor i datum. Citat koji je stroj izvukao iz uvjeta provjerite u izvorniku.
 

@@ -2,14 +2,14 @@
 
 *Plan za ispis · dio III knjige (poglavlja 9–12), najviše poglavlje 11 · 90 minuta*
 
-U trećoj radionici radimo s materijalom koji već postoji: listićem koji je svatko donio.
+U trećoj radionici radimo s materijalom koji već postoji: listićem koji je svatko donio. Radionica prati dio III (poglavlja 9–12), a najviše se oslanja na poglavlje 11.
 
 **Za koga.** Predmetni aktivi i aktiv razredne nastave; vrijedi pozvati pedagoga ili edukacijskog rehabilitatora škole.
 
 **Ishodi.** Sudionik
 1. iz jednog listića složi tri staze;
 2. pojednostavljeni tekst provjeri tablicom gubitka i odluči što vraća;
-3. razlikuje anonimni nacrt prilagodbe zadataka od pisanog dokumenta o prilagodbi koji propisuje Pravilnik te zna zašto taj dokument ne ide u alat.
+3. razlikuje anonimni nacrt prilagodbe zadataka od pisanog dokumenta o individualiziranim postupcima ili prilagodbi sadržaja koji propisuje Pravilnik o osnovnoškolskom i srednjoškolskom odgoju i obrazovanju učenika s teškoćama u razvoju te zna zašto taj dokument ne ide u alat.
 
 **Priprema voditelja.** Odjeljci 11.3 („Tri staze iz jednog listića“), 11.4 („Pravila pojednostavljenja teksta“) i 11.6 („Učenici s teškoćama: što smije, a što ne“); ispis prazne tablice gubitka po uzoru na tablicu 11.2 ([tablica-gubitka.md](tablica-gubitka.md)). Recept „Tri staze iz jednog listića“ provedite jednom na vlastitom listiću; rješenja riješite sami, s crtežima. Odgovore iz demonstracije spremite kao PDF.
 
@@ -22,7 +22,7 @@ U trećoj radionici radimo s materijalom koji već postoji: listićem koji je sv
 | 10 | uvod | Jedan listić, jedan razred: tko ga ne može riješiti i zašto, opisano vrstom teškoće, a ne imenom djeteta. |
 | 15 | demonstracija | „Tri staze iz jednog listića“ na voditeljevu listiću. |
 | 40 | rad u parovima | Tri staze na vlastitom listiću (20 min). Zatim „Pojednostavljenje s provjerom gubitka“: parovi zamijene tekstove pa svatko ispuni tablicu gubitka za tuđi (20 min). |
-| 15 | rasprava | Granica Pravilnika: što smijemo (opis vrste prilagodbe), a što ne (dokument o prilagodbi, zdravstveni podaci). |
+| 15 | rasprava | Granica iz odjeljka 11.6: što smije u alat (vrsta prilagodbe kao opći naziv), a što ne (pisani dokument, opis djeteta, zdravstveni podaci). |
 | 10 | refleksija | Izlazna kartica. |
 
 ## Materijali
@@ -32,7 +32,7 @@ U trećoj radionici radimo s materijalom koji već postoji: listićem koji je sv
 - Prazna tablica gubitka za ispis: [tablica-gubitka.md](tablica-gubitka.md), dvije po sudioniku.
 - Rezervni tekst za vježbu pojednostavljenja, za par koji nema svoj: [voda-oko-nas.md](voda-oko-nas.md).
 - Kontrolni popis [6 Prilagođeni materijal](../../predlosci/kontrolni-popisi/06_prilagodeni-materijal.md).
-- Za raspravu o granici Pravilnika: predložak [D.8 Anonimni nacrt prilagodbe zadataka](../../predlosci/dokumenti/D.8_anonimni-nacrt-prilagodbe.md).
+- Za raspravu o granici iz odjeljka 11.6: predložak [D.8 Anonimni nacrt prilagodbe zadataka](../../predlosci/dokumenti/D.8_anonimni-nacrt-prilagodbe.md).
 - [Izlazna kartica](izlazna-kartica.md).
 
 ## Pravilo podataka
@@ -45,7 +45,7 @@ O učenicima samo vrste prilagodbe, nikad dijete ni razred u kojem bi se dijete 
 
 ## Do sljedećeg aktiva
 
-Jedna staza u stvarnom satu i bilješka o tome što je stroj izostavio. Donesite i jedan svoj zadatak koji učenici, po vašem mišljenju, lako riješe UI-jem.
+Jedna staza na stvarnom satu i bilješka o tome što je stroj izostavio. Donesite i jedan svoj zadatak za koji mislite da ga učenici lako riješe UI-jem.
 
 ## Je li uspjela?
 

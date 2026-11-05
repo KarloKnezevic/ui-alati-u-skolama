@@ -6,7 +6,7 @@
 
 **Izlazna kartica · Radionica 4**
 
-**1. Odgovorite iz glave.** Zašto rezultat detektora UI-teksta nije dokaz?
+**1. Odgovorite iz glave.** Zašto rezultat detektora UI teksta nije dokaz?
 
 &nbsp;
 
@@ -30,7 +30,7 @@
 
 **Izlazna kartica · Radionica 4**
 
-**1. Odgovorite iz glave.** Zašto rezultat detektora UI-teksta nije dokaz?
+**1. Odgovorite iz glave.** Zašto rezultat detektora UI teksta nije dokaz?
 
 &nbsp;
 

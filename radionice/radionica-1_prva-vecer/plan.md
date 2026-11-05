@@ -2,9 +2,9 @@
 
 *Plan za ispis · dio I knjige (poglavlja 1–5) · 90 minuta*
 
-Prva radionica ima jedan cilj: da nitko ne ode bez jedne stvari koja mu je uštedjela posao i bez tri navike koje ga štite. Kolegi koji kaže „pokaži mi jednu stvar koja radi“, ovo je ta stvar.
+Prva radionica ima jedan cilj: da nitko ne ode bez jedne stvari koja mu je uštedjela posao i bez tri navike koje ga štite. Kolegi koji kaže „pokaži mi jednu stvar koja radi“, ovo je ta stvar. Prati dio I (poglavlja 1–5).
 
-**Za koga.** Cijeli aktiv, i oni koji asistent nikad nisu otvorili; najbolje na početku školske godine.
+**Za koga.** Cijeli aktiv, pa i oni koji asistent nikad nisu otvorili; najbolje na početku školske godine.
 
 **Ishodi.** Sudionik
 1. iz diktata ili vlastitog teksta izradi prvi upotrebljiv nacrt;

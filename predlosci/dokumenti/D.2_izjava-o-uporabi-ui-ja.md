@@ -2,7 +2,7 @@
 
 *Predložak iz dodatka D knjige. Rabe ga: učenici, studenti, nastavnici. Obrazloženje: poglavlje 15.*
 
-Izjava ima šest pitanja iz odjeljka 15.5 i jedno pravilo koje učenici moraju čuti izrijekom: dopuštena uporaba ne snižava ocjenu. Ocjenjuje se rad prema kriterijima, a izjava pokazuje kako je rad nastao. Za studente je izjava ista, samo umjesto „razred“ piše „kolegij“. Najprije donosimo inačicu za nastavnike, a zatim obrazac za učenike.
+Izjava ima šest pitanja iz odjeljka 15.5 i jedno pravilo koje učenici moraju čuti izrijekom: dopuštena uporaba ne snižava ocjenu. Ocjenjuje se rad prema kriterijima, a izjava pokazuje kako je rad nastao. Za studente je izjava ista, samo u njoj umjesto „razred“ piše „kolegij“. Najprije donosimo inačicu za nastavnike, a zatim obrazac za učenike.
 
 > **Predložak, a ne pravni savjet.** Prije uporabe uskladite ga sa službenikom za zaštitu podataka i s aktima škole.
 
@@ -10,9 +10,9 @@ Izjava ima šest pitanja iz odjeljka 15.5 i jedno pravilo koje učenici moraju �
 
 ## Inačica za nastavnike
 
-Smjernice transparentnost traže i od nas. Za materijal koji ostaje u razredu dovoljna je jedna rečenica u podnožju, a za materijal koji dijelimo s aktivom, objavljujemo ili nudimo kao primjer dobre prakse, kratka izjava.
+Smjernice traže transparentnost i od nas. Za materijal koji ostaje u razredu dovoljna je jedna rečenica u podnožju, a za materijal koji dijelimo s aktivom, objavljujemo ili nudimo kao primjer dobre prakse, kratka izjava.
 
-**Izjava uz nastavni materijal** (podnožje ili zadnja stranica)
+**Izjava uz nastavni materijal** (podnožje ili posljednja stranica)
 
 ```text
 Kratka napomena:
@@ -23,7 +23,7 @@ Materijal: [NAZIV], [PREDMET, RAZRED], inačica od [DATUM]
 Alat: [KATEGORIJA ALATA, npr. opći asistent, školski račun]
 Za što: [npr. nacrt zadataka, inačica u dvije razine, slike]
 Kako sam provjerio/la: [npr. riješio/la sve zadatke na papiru,
-usporedio/la činjenice s udžbenikom, jezična provjera]
+usporedio/la činjenice s udžbenikom, jezično pregledao/la tekst]
 U alat nisu uneseni podaci o učenicima.
 Za sadržaj odgovaram: [IME I PREZIME]
 ```

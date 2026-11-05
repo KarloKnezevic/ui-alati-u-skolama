@@ -1,4 +1,4 @@
-# Poglavlje 22: kôd bez straha
+# Poglavlje 22: Kȏd bez straha: čitati, mijenjati i popravljati
 
 Primjeri za čitanje i mijenjanje kôda. `kviz_konstante.gs` je preuređena
 funkcija `napraviKviz` sa slike „Anatomija skripte“ (zamjenjuje istoimenu

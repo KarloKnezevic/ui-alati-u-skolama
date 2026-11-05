@@ -1,4 +1,4 @@
-# Primjer: ulaz i odobreni izlaz (5.d, izmišljeno za vježbu)
+# Primjer: ulaz i odobreni izlaz (5. d, izmišljeno za vježbu)
 
 ## Ulaz
 

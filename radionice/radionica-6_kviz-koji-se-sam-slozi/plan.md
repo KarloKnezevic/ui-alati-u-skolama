@@ -2,7 +2,7 @@
 
 *Plan za ispis · dio VI knjige (poglavlja 20–24), oslanja se na poglavlja 21 i 22 · 90 minuta*
 
-Na šestoj radionici prvi put otvaramo kȏd, ali nitko ne mora programirati.
+Na šestoj radionici prvi put otvaramo kȏd, ali nitko ne mora programirati. Radionica prati dio VI (poglavlja 20–24), a oslanja se na poglavlja 21 i 22.
 
 **Za koga.** Sudionici prvih triju radionica; programersko predznanje nije potrebno.
 
@@ -21,8 +21,8 @@ Na šestoj radionici prvi put otvaramo kȏd, ali nitko ne mora programirati.
 |---|---|---|
 | 10 | uvod | Pravilo „pročitaj prije nego što pokreneš“ (popis 10). |
 | 15 | demonstracija | Recept 21.3 na jednom računalu, do gotovog obrasca. |
-| 40 | rad u parovima | Čitanje skripte na papiru: olovkom zaokružiti ulaz, izlaz i redak koji bi se mijenjao za drugi kviz (20 min). Zatim pokvarena inačica: parovi dobiju poruku o pogrešci na papiru i po receptu „Od poruke o pogrešci do popravka“ (poglavlje 22) najprije zapišu hipotezu, pa je provjere s asistentom (20 min). |
-| 15 | rasprava | Koja dopuštenja skripta traži i što bi koga zaustavilo da je sam pokrene. |
+| 40 | rad u parovima | Čitanje skripte na papiru: olovkom zaokružiti ulaz, izlaz i redak koji bi se mijenjao za drugi kviz (20 min). Zatim pokvarena inačica: parovi dobiju poruku o pogrešci na papiru i prema receptu „Od poruke o pogrešci do popravka“ (poglavlje 22) najprije zapišu hipotezu, pa je provjere s asistentom (20 min). |
+| 15 | rasprava | Koja dopuštenja skripta traži i što bi koga od nas zaustavilo da je pokreće sam. |
 | 10 | refleksija | Izlazna kartica. |
 
 ## Materijali

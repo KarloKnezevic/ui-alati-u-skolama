@@ -41,7 +41,7 @@ case "${1:-gemini}" in
     curl -sS "https://api.openai.com/v1/responses" \
       -H "Authorization: Bearer ${OPENAI_API_KEY:?Postavite OPENAI_API_KEY}" \
       -H "Content-Type: application/json" \
-      -d "{\"model\": \"gpt-5-nano\", \"input\": \"$UPIT\",
+      -d "{\"model\": \"gpt-6-luna\", \"input\": \"$UPIT\",
            \"text\": {\"format\": {\"type\": \"json_schema\", \"name\": \"odgovor\",
                                   \"strict\": true, \"schema\": $SHEMA}}}"
     ;;

@@ -18,9 +18,9 @@ Internet često ne radi.
 4. Kraj: „Pročitali smo sve riječi!“ i gumb „Nova igra“.
 
 ## Sadržaj (popise mijenjam sama, na vrhu kôda)
-Razina 1: voda, kiša, potok, bunar, oblak, kap, more, rijeka,
-lokva, rosa
-Razina 2: kapljica, izvorište, oborine, isparavanje, kruženje
+Razina 1: voda, kiša, potok, bunar, oblak, para, more, rijeka,
+snijeg, jezero
+Razina 2: putovanje, zalijevanje, oborine, isparavanje, kruženje
 
 ## Pravila
 - Riječi se miješaju; nijedna se ne ponavlja dok se ne pročitaju sve.

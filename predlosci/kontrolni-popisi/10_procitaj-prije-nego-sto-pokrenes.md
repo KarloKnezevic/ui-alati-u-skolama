@@ -4,7 +4,7 @@
 
 - ☐ Znate što skripta čita i što mijenja: koje tablice, datoteke i mape.
 - ☐ Znate šalje li išta van (internet, e-pošta, druge usluge) i kome.
-- ☐ Ključ nije u kȏdu ni u dijeljenoj tablici; znate gdje je i tko ga vidi.
+- ☐ API ključ nije u kȏdu ni u dijeljenoj tablici; znate gdje je i tko ga vidi.
 - ☐ Postoji ograničenje: najviše redaka po pokretanju, gornja granica potrošnje, kvota e-pošte.
 - ☐ Prvi put skriptu pokrećete na izmišljenim podacima, a izlaz provjeravate ručno.
 - ☐ Skripta ostavlja zapis: što je napravila i kada.

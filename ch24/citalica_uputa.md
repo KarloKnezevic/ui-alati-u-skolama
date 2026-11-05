@@ -20,7 +20,7 @@ ili TextEditu kao običan tekst. Na vrhu skripte je popis `RIJECI`:
 
     const RIJECI = {
       1: ["voda", "kiša", ...],
-      2: ["kapljica", "izvorište", ...]
+      2: ["putovanje", "zalijevanje", ...]
     };
 
 Svaka riječ stoji u ravnim navodnicima, a riječi odvaja zarez. Spremite kao

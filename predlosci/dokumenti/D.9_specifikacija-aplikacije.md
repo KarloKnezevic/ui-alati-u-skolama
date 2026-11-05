@@ -2,7 +2,7 @@
 
 *Predložak iz dodatka D knjige. Rabi ga: nastavnik koji gradi alat. Obrazloženje: poglavlje 24.*
 
-Osam naslova sa slike 24.1, spremnih za popunjavanje. Pišite u običnom tekstnom dokumentu, s naslovima označenima ljestvama (Markdown), jer ga model tako čita bez zabune. Popunjeni primjer jest Jelenina Čitalica u poglavlju 24.
+Ovo je osam naslova sa slike 24.1, spremnih za popunjavanje. Pišite u običnom tekstnom dokumentu, s naslovima označenima ljestvama (Markdown) jer ga model tako čita bez zabune. Popunjeni primjer je specifikacija Jelenine Čitalice u poglavlju 24 (u spremištu: [ch24/specifikacija_citalica.md](../../ch24/specifikacija_citalica.md)).
 
 Kopirajte blok ispod u svoj dokument i popunite mjesta u uglatim zagradama.
 

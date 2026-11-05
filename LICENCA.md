@@ -2,7 +2,7 @@
 
 Spremište prati knjigu *Korištenje alata umjetne inteligencije u školama*
 (dr. sc. Karlo Knežević, CroAI, 2026.). Različiti dijelovi spremišta imaju
-različite licencije, jer se različito i koriste.
+različite licencije jer se različito i koriste.
 
 | Što | Licencija | Smijete |
 |---|---|---|

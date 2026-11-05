@@ -1,4 +1,4 @@
-# Poglavlje 24: napravite si aplikaciju
+# Poglavlje 24: Napravite si aplikaciju: od opisa do alata za učionicu
 
 Tri gotove aplikacije iz poglavlja, svaka u jednoj HTML datoteci koja radi
 bez interneta, bez prijave i bez ikakvog modela, i ništa ne sprema.

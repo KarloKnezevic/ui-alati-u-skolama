@@ -1,4 +1,4 @@
-# Poglavlje 20: vlastiti asistent i vještine
+# Poglavlje 20: Vlastiti asistent: upute, znanje i vještine
 
 `asistent-5r_upute.md` je sustavska uputa Tomislavova „Asistenta za
 5. razred“ (inačica 5, 38 redaka), a mapa `listic-u-tri-staze/` vještina iz

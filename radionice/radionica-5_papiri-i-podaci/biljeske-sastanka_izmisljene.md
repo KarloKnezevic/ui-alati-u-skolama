@@ -1,8 +1,8 @@
 # Izmišljene bilješke sa sastanka
 
-*Radionica 5 · za recept 18.2 „Sažetak sastanka iz bilješki bez imena“ (poglavlje 18)*
+*Radionica 5 · za recept 18.2 „Sažetak sastanka iz bilježaka bez imena“ (poglavlje 18)*
 
-Dva skupa bilješki. Prvi je Petrin iz poglavlja 18, već pripremljen za unos; dobar je za demonstraciju jer se zna gdje stroj griješi. Drugi je novi i još nije pripremljen: u njemu je jedan redak koji ne smije u alat, pa se na njemu vježba i prvi korak recepta. Sve osobe, uloge i dogovori izmišljeni su.
+Dva skupa bilježaka. Prvi je Petrin iz poglavlja 18, već pripremljen za unos; dobar je za demonstraciju jer se zna gdje stroj griješi. Drugi je novi i još nije pripremljen: u njemu je jedan redak koji ne smije u alat, pa se na njemu vježba i prvi korak recepta. Sve osobe, uloge i dogovori izmišljeni su.
 
 Upit: [18.2 Sažetak sastanka: tko, što, do kada](../../predlosci/upiti/ch18/18.02_sazetak-sastanka-tko-sto-do-kada.md).
 

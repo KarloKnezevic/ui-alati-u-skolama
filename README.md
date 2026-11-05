@@ -96,7 +96,7 @@ flowchart LR
 ```
 
 Svaka mapa poglavlja ima `README.md` (što je u mapi i kako se pokreće) i
-`PROVJERENO.md` (kada je kôd zadnji put pokrenut, s kojim inačicama i kojim
+`PROVJERENO.md` (kada je kôd posljednji put pokrenut, s kojim inačicama i kojim
 modelom). Ako je datum star, prije uporabe pogledajte
 [`STANJE_ALATA.md`](STANJE_ALATA.md) i [`ISPRAVCI.md`](ISPRAVCI.md).
 
@@ -106,10 +106,10 @@ modelom). Ako je datum star, prije uporabe pogledajte
 |---|---|---|
 | [`ch16/`](ch16/README.md) | 16 · Provjere, kvizovi i rubrike | kviz kao podatak: JSON i GIFT za uvoz u Moodle/Loomen |
 | [`ch19/`](ch19/README.md) | 19 · Što nam govore rezultati | izmišljeni rezultati razreda, formule za tablicu, analiza u Pythonu i bilježnici |
-| [`ch20/`](ch20/README.md) | 20 · Vlastiti asistent | upute asistenta i vještina „listić u tri staze” |
+| [`ch20/`](ch20/README.md) | 20 · Vlastiti asistent | upute asistenta i vještina „listić u tri staze“ |
 | [`ch21/`](ch21/README.md) | 21 · Tablica koja radi sama | Apps Script: kviz iz tablice, poruke, brojač, namjerno pokvarena inačica |
 | [`ch22/`](ch22/README.md) | 22 · Kôd bez straha | primjeri za čitanje i popravljanje, kostur skripte, kviz u listić |
-| [`ch23/`](ch23/README.md) | 23 · API i strukturirani izlaz | `pitajModel`, JSON-sheme, trideset listića, povratna informacija, zlatni skup, primjeri za `curl` |
+| [`ch23/`](ch23/README.md) | 23 · API i strukturirani izlaz | `pitajModel`, JSON sheme, trideset listića, povratna informacija, zlatni skup, primjeri za `curl` |
 | [`ch24/`](ch24/README.md) | 24 · Napravite si aplikaciju | Čitalica, Razlomci na pizzi, Provjeravač referenci |
 | [`ch25/`](ch25/README.md) | 25 · Agenti i tijekovi rada | tjedni okidač |
 | [`ch26/`](ch26/README.md) | 26 · Konektori, pretraživanje po značenju i MCP | MCP poslužitelj nad knjižnicom listića, pretraživanje po značenju |

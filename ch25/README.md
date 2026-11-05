@@ -1,4 +1,4 @@
-# Poglavlje 25: Damirov ponedjeljak
+# Poglavlje 25: Kad UI sam klika: agenti i tijekovi rada
 
 `tjedni_okidac.gs` sadrži tri funkcije iz odjeljka o zakazanom tijeku:
 `postaviTjedniOkidac` (pokreće se jednom, ručno), `ponedjeljakUjutro` (nju

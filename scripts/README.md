@@ -6,7 +6,7 @@ cijelo spremište. Prođe sve mape `chNN/` i `podaci_izmisljeni/`: provjeri
 skripte u `.html`), ispravnost JSON-a i bilježnica, broj stupaca u CSV-ovima,
 kodiranje UTF-8 i da nigdje nema ničega što izgleda kao ključ. Zatim
 pokrene primjere koji rade bez mreže (analiza kviza, težina zadataka, alat
-za listić, GIFT i kviz iz Apps Scripta u simulaciji, MCP-poslužitelj) i,
+za listić, GIFT i kviz iz Apps Scripta u simulaciji, MCP poslužitelj) i,
 ako je postavljena varijabla `GEMINI_API_KEY`, pošalje jedan probni poziv
 modelu `gemini-3.1-flash-lite`. Na kraju ispiše sažetak „prošlo / palo /
 preskočeno“.

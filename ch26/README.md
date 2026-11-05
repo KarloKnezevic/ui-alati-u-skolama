@@ -1,4 +1,4 @@
-# Poglavlje 26: pretraživanje po značenju i MCP
+# Poglavlje 26: UI koji vidi vaše dokumente: konektori, pretraživanje po značenju i MCP
 
 Dva primjera iz poglavlja. Prvi je pretraživanje po značenju:
 `pretrazivanje_po_znacenju.ipynb` za Colab i `pretrazivanje_po_znacenju.py`
@@ -9,7 +9,7 @@ nijednom); za svoju datoteku promijenite konstantu `DATOTEKA`.
 izmišljenih za vježbu. Brojke u knjizi dobivene su jednim pokretanjem;
 vaše se mogu malo razlikovati.
 
-Drugi je mali MCP-poslužitelj koji samo čita mapu `knjiznica/`: resurs s
+Drugi je mali MCP poslužitelj koji samo čita mapu `knjiznica/`: resurs s
 ishodima (`ishodi.md`), predložak upita (`upiti/listic.md`) i alat
 `pronadi_materijal`. `posluzitelj_pokrivenost.py` je isti poslužitelj s
 drugim alatom, `pokrivenost`. Mapa `knjiznica/listici/` ima četrdeset

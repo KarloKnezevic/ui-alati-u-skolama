@@ -95,7 +95,7 @@ def provjeri_strukturu(mape):
             continue
         prov = (mapa / "PROVJERENO.md").read_text(encoding="utf-8")
         if not prov.startswith(f"Provjereno: {mapa.name}") or \
-                "Datum zadnje provjere:" not in prov or "Model u POSTAVKE:" not in prov:
+                "Datum posljednje provjere:" not in prov or "Model u POSTAVKE:" not in prov:
             zapis("palo", f"{mapa.name}/PROVJERENO.md nije u obliku iz Dodatka E")
         else:
             zapis("ok", f"{mapa.name}: README.md i PROVJERENO.md")
@@ -324,7 +324,7 @@ uGift(JSON.parse(fs.readFileSync('ch21/kviz.json', 'utf8')));
 if (!stanje.dohvati().startsWith(ocekivano)) { console.log('prva pitanja ch21/kviz.json ne daju GIFT iz ch16'); process.exit(1); }
 console.log('U REDU');
 """, privremena)
-        pokreni_node("ch21: pokreni() s kviz.gs složi 10 pitanja, kviz_pokvareni.gs staje na 7.", r"""
+        pokreni_node("ch21: pokreni() s kviz.gs složi 10 pitanja, kviz_pokvareni.gs staje na 8.", r"""
 ucitaj('ch21/Code.gs');
 vm.runInThisContext(fs.readFileSync('ch21/kviz.gs', 'utf8').replace('const KVIZ', 'globalThis.KVIZ'));
 pokreni();
@@ -334,7 +334,7 @@ const kljuc = o.stavke.map(s => 'ABCD'[s.izbori.findIndex(i => i.tocan)]).join('
 if (kljuc !== 'BBACDABDCA') { console.log('ključ se ne slaže s ch19: ' + kljuc); process.exit(1); }
 vm.runInThisContext(fs.readFileSync('ch21/kviz_pokvareni.gs', 'utf8').replace('const KVIZ', 'globalThis.KVIZ'));
 try { pokreni(); console.log('pokvareni kviz nije zaustavljen'); process.exit(1); }
-catch (e) { if (!/Pitanje 7/.test(e.message)) { console.log(e.message); process.exit(1); } }
+catch (e) { if (!/Pitanje 8/.test(e.message)) { console.log(e.message); process.exit(1); } }
 console.log('U REDU');
 """, privremena)
     if (KORIJEN / "ch23").is_dir():
@@ -345,7 +345,7 @@ if (stanje.zapisnik[0] !== 'treba točno 5 zadataka') { console.log(stanje.zapis
 console.log('U REDU');
 """, privremena)
     if (KORIJEN / "ch26").is_dir():
-        pokreni("ch26/proba.py: MCP-poslužitelj preko stdio, 11 listića za A.5.3",
+        pokreni("ch26/proba.py: MCP poslužitelj preko stdio, 11 listića za A.5.3",
                 [py, "proba.py", "posluzitelj_pokrivenost.py"], KORIJEN / "ch26",
                 ["pronadi_materijal", "dio-cjeline", "A.5.3.    11", "B.5.1.     0"],
                 paketi=("mcp",))

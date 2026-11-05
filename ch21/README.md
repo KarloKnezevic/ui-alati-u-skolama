@@ -1,11 +1,11 @@
-# Poglavlje 21: tablica koja radi sama
+# Poglavlje 21: Tablica koja radi sama: automatizacija bez straha
 
 Skripte za Google Apps Script iz poglavlja 21. `Code.gs` sadrži
 `napraviKviz`, `uGift` i `pokreni` (kviz iz JSON-a u Google obrascu i
 datoteka GIFT za Loomen), `kviz.gs` cijeli Tomislavov kviz od deset pitanja
 kao konstantu `KVIZ`, a `kviz.json` isti kviz kao običan JSON. U
-`kviz_pokvareni.gs` jedno pitanje ima ključ izvan popisa odgovora, za vježbu
-čitanja poruke o pogrešci. `koliko.gs` je Damirova prva skripta, a
+`kviz_pokvareni.gs` osmo pitanje ima ključ izvan popisa odgovora
+(`"tocan": 4`), za vježbu čitanja poruke o pogrešci. `koliko.gs` je Damirova prva skripta, a
 `Poruke.gs` nacrti poruka s odobrenjem (`pripremiNacrte`,
 `posaljiOdobrene`).
 

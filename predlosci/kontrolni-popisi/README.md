@@ -21,9 +21,9 @@ Redoslijed prati knjigu, ne važnost. Ako ćete ispisati samo jedan, neka to bud
 | 11 | [Agent i konektor](11_agent-i-konektor.md) | prvi agentski zadatak, povezivanje računa | 25, 26 |
 | 12 | [Prije puštanja tutora ili asistenta](12_prije-pustanja-tutora-ili-asistenta.md) | prije nego što ga vide drugi | 14, 20 |
 | 13 | [Prvih sedam dana](13_prvih-sedam-dana.md) | prvi tjedan s UI-jem | 1 |
-| 14 | [Polugodišnji servis](14_polugodisnji-servis.md) | jednom po polugodištu | 28 |
+| 14 | [Polugodišnji servis](14_polugodisnji-servis.md) | jednom u polugodištu | 28 |
 
-Prva dva popisa idu zajedno: prvi prolazimo prije svakog unosa i za to treba desetak sekundi, a drugi provodimo jednom na svakom računu i uređaju, zatim na svakom servisu. Nijedan od njih ne čini osobni račun prikladnim za podatke učenika: oba samo smanjuju trag svega ostalog što upisujemo. Popisi 10 do 12 trebaju samo onima koji pokreću skripte, agente ili vlastite asistente.
+Prva dva popisa idu zajedno. Prvi prolazimo prije svakog unosa i za to treba desetak sekundi; drugi prolazimo jednom na svakom računu i uređaju, a zatim ponovno na svakom servisu. Nijedan od njih ne čini osobni račun prikladnim za podatke učenika: oba samo smanjuju trag svega ostalog što upisujemo. Popisi 10 do 12 trebaju samo onima koji pokreću skripte, agente ili vlastite asistente.
 
 Popisi ne zamjenjuju prosudbu, nego je čuvaju za ono što je važno. Kad stavka postane navika i olovka je više ne treba, popis je obavio posao.
 

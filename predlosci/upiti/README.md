@@ -142,17 +142,17 @@ Svi numerirani upiti iz knjige, označeni istim brojem kao u knjizi.
 
 ## Poglavlje 23: Bez prozora za razgovor: API, strukturirani izlaz i trideset listića
 
-- [23.1 Nacrt JSON-sheme za zadani izlaz](ch23/23.01_nacrt-json-sheme-za-zadani-izlaz.md)
+- [23.1 Nacrt JSON sheme za zadani izlaz](ch23/23.01_nacrt-json-sheme-za-zadani-izlaz.md)
 - [23.2 Personalizirani listić: predložak s varijablama](ch23/23.02_personalizirani-listic-predlozak-s-varijablama.md)
 - [23.3 Nacrt povratne informacije prema rubrici (za shemu)](ch23/23.03_nacrt-povratne-informacije-prema-rubrici-za-shemu.md)
 
 ## Poglavlje 24: Napravite si aplikaciju: od opisa do alata za učionicu
 
 - [24.1 Specifikacija u aplikaciju](ch24/24.01_specifikacija-u-aplikaciju.md)
-- [24.2 Opis greške u aplikaciji](ch24/24.02_opis-greske-u-aplikaciji.md)
+- [24.2 Opis pogreške u aplikaciji](ch24/24.02_opis-pogreske-u-aplikaciji.md)
 - [24.3 Provjera pristupačnosti za projektor](ch24/24.03_provjera-pristupacnosti-za-projektor.md)
 
-## Poglavlje 25: Kad UI sam klikće: agenti i tijekovi rada
+## Poglavlje 25: Kad UI sam klika: agenti i tijekovi rada
 
 - [25.1 Zadatak za agenta](ch25/25.01_zadatak-za-agenta.md)
 - [25.2 Testni dokument sa skrivenom bezopasnom uputom](ch25/25.02_testni-dokument-sa-skrivenom-bezopasnom-uputom.md)
@@ -160,7 +160,7 @@ Svi numerirani upiti iz knjige, označeni istim brojem kao u knjizi.
 ## Poglavlje 26: UI koji vidi vaše dokumente: konektori, pretraživanje po značenju i MCP
 
 - [26.1 Što ovaj konektor može s mojim podacima?](ch26/26.01_sto-ovaj-konektor-moze-s-mojim-podacima.md)
-- [26.2 Specifikacija MCP-poslužitelja](ch26/26.02_specifikacija-mcp-posluzitelja.md)
+- [26.2 Specifikacija MCP poslužitelja](ch26/26.02_specifikacija-mcp-posluzitelja.md)
 - [26.3 Koje ishode nisam pokrio?](ch26/26.03_koje-ishode-nisam-pokrio.md)
 
 ## Poglavlje 27: Model na vlastitom računalu: lokalni modeli, glas i slika bez oblaka

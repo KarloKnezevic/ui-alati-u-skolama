@@ -2,7 +2,7 @@
 
 *Plan za ispis · dio V knjige (poglavlja 18 i 19) · 90 minuta*
 
-Peta radionica bavi se poslom koji ne vide ni učenici ni roditelji: zapisnicima, teškim razgovorima i tablicama rezultata.
+Peta radionica bavi se poslom koji ne vide ni učenici ni roditelji: zapisnicima, pripremom teških razgovora i tablicama rezultata. Prati dio V (poglavlja 18 i 19).
 
 **Za koga.** Razrednici, stručni suradnici, voditelji aktiva.
 
@@ -11,7 +11,7 @@ Peta radionica bavi se poslom koji ne vide ni učenici ni roditelji: zapisnicima
 2. uvježba težak razgovor s roditeljem kao generalnu probu i zna gdje proba prestaje;
 3. na izmišljenim podacima izračuna težinu i diskriminaciju zadataka i protumači jedan zadatak.
 
-**Priprema voditelja.** Poglavlja 18 i 19; recepti 18.2 („Sažetak sastanka iz bilješki bez imena“), 18.4 („Generalna proba teškog razgovora“) i 19.1 („Težina i diskriminacija u tablici“) provedeni jednom; izmišljene bilješke ([biljeske-sastanka_izmisljene.md](biljeske-sastanka_izmisljene.md)) i izmišljena tablica rezultata iz spremišta (`ch19/rezultati_izmisljeni.csv`). Tablicu unaprijed otvorite u proračunskoj tablici na računalu s projektorom i spremite kopiju za svaki par koji radi na svom uređaju; ostalima je ispišite. Odgovore iz demonstracije spremite kao PDF.
+**Priprema voditelja.** Poglavlja 18 i 19; recepti 18.2 („Sažetak sastanka iz bilježaka bez imena“), 18.4 („Generalna proba teškog razgovora“) i 19.1 („Težina i diskriminacija u tablici“) provedeni jednom; izmišljene bilješke ([biljeske-sastanka_izmisljene.md](biljeske-sastanka_izmisljene.md)) i izmišljena tablica rezultata iz spremišta (`ch19/rezultati_izmisljeni.csv`). Tablicu unaprijed otvorite u proračunskoj tablici na računalu s projektorom i spremite kopiju za svaki par koji radi na svom uređaju; ostalima je ispišite. Odgovore iz demonstracije spremite kao PDF.
 
 **Oprema.** Jedno računalo s projektorom i voditeljevim računom (scenarij B iz poglavlja 14); za recept 19.1 dovoljna je bilo koja proračunska tablica, a asistent nije potreban.
 
@@ -20,7 +20,7 @@ Peta radionica bavi se poslom koji ne vide ni učenici ni roditelji: zapisnicima
 | Min. | Dio | Što se radi |
 |---|---|---|
 | 10 | uvod | Četiri stube podataka iz poglavlja 19: od tablice s imenima do izmišljenih podataka ([cetiri-stube-podataka.md](cetiri-stube-podataka.md)). |
-| 15 | demonstracija | Recept 18.2 („Sažetak sastanka iz bilješki bez imena“) na izmišljenim bilješkama. |
+| 15 | demonstracija | Recept 18.2 („Sažetak sastanka iz bilježaka bez imena“) na izmišljenim bilješkama. |
 | 40 | rad u parovima | Generalna proba razgovora: jedan razgovara s asistentom koji igra roditelja, drugi bilježi što bi rekao drukčije (20 min). Zatim recept 19.1 („Težina i diskriminacija u tablici“) na izmišljenoj tablici (20 min). |
 | 15 | rasprava | Što smije izaći iz e-Dnevnika, a što ne; zašto izvoz ne ide u osobni asistent. |
 | 10 | refleksija | Izlazna kartica. |
@@ -46,7 +46,7 @@ Izvoz iz e-Dnevnika ne dolazi na radionicu. Scenariji razgovora su izmišljeni i
 
 ## Do sljedećeg aktiva
 
-Ponovite izračun na vlastitoj provjeri, u tablici, bez slanja podataka u asistent.
+Ponovite izračun na rezultatima vlastite provjere znanja, u tablici, bez slanja podataka u asistent.
 
 ## Je li uspjela?
 

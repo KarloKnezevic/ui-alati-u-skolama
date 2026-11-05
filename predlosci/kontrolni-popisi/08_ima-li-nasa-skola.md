@@ -6,7 +6,7 @@
 - ☐ popis odobrenih alata s kategorijama i osobom koja ga održava;
 - ☐ službenika za zaštitu podataka čiji kontakt svi znaju;
 - ☐ procjenu učinka (DPIA) za alate u koje ulaze podaci učenika, ako je potrebna;
-- ☐ pravila za učenike po dobi (dobna granica za privolu: 16 godina);
+- ☐ pravila za učenike prema dobi (dobna granica za privolu: 16 godina);
 - ☐ dogovoren način navođenja uporabe UI-ja (izjava o uporabi);
 - ☐ postupak kad nešto pođe krivo, s imenom osobe kojoj se javlja;
 - ☐ plan usavršavanja za ovu školsku godinu;

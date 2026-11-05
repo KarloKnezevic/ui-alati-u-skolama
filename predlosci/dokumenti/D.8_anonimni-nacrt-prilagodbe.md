@@ -21,4 +21,4 @@ Obrazac je inačica tablice 11.3 u knjizi, složena za ispis i potpis. Pisani do
 | **Alat i datum** | kategorija alata, datum izrade |
 | **Pregledao/la** | stručni suradnik ____________  datum ________ |
 
-*U obrazac se ne upisuju ime, šifra, opis ni dijagnoza učenika. Koji učenik dobiva koju inačicu, bilježi se samo u dokumentaciji škole. Predložak, nije pravni savjet.*
+*U obrazac se ne upisuju ime, šifra, opis ni dijagnoza učenika. Koji učenik dobiva koju inačicu, bilježi se samo u dokumentaciji škole. Predložak, a ne pravni savjet.*

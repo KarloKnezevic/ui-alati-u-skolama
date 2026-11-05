@@ -1,8 +1,8 @@
-# Poglavlje 19: što nam govore rezultati
+# Poglavlje 19: Što nam govore rezultati: analiza razreda i istraživanje vlastite prakse
 
 `rezultati_izmisljeni.csv` je izmišljena tablica rezultata kviza o
 razlomcima: 24 učenika pod šiframa U01 do U24, redak `KLJUC` s točnim
-odgovorima i deset stupaca `P1` do `P10`, odvojenih točkom-zarezom. Iz nje
+odgovorima i deset stupaca `P1` do `P10`, odvojenih točkom sa zarezom. Iz nje
 su izračunane sve brojke u poglavlju (težina, diskriminacija, odabiri u
 tablici distraktora), pa ih možete provjeriti. `formule.txt` sadrži pet
 formula iz recepta za proračunsku tablicu, a `analiza_kviza.py` i

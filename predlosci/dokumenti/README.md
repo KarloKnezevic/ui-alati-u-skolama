@@ -10,7 +10,7 @@ Mjesta za popunjavanje pisana su velikim slovima u uglatim zagradama, `[OVAKO]`;
 | D.2 | [Izjava o uporabi UI-ja](D.2_izjava-o-uporabi-ui-ja.md) | učenici, studenti, nastavnici | 15 |
 | D.3 | [Kartica zadatka po AIAS-u](D.3_kartica-zadatka.md) | nastavnik, aktiv, katedra | 15 |
 | D.4 | [Obavijest i česta pitanja za roditelje](D.4_obavijest-roditeljima.md) | škola, razrednici | 13, 18 |
-| D.5 | [Postupak kod krivotvorenog sadržaja](D.5_postupak-krivotvoreni-sadrzaj.md) | ravnatelj, stručna služba, razrednici | 18 |
+| D.5 | [Postupak u slučaju krivotvorenog sadržaja](D.5_postupak-krivotvoreni-sadrzaj.md) | ravnatelj, stručna služba, razrednici | 18 |
 | D.6 | [Zahtjev školskom administratoru](D.6_zahtjev-administratoru.md) | nastavnik | 5, 21 |
 | D.7 | [Prijedlog pilota ravnatelju](D.7_prijedlog-pilota.md) | tim za UI, nastavnik | 13 |
 | D.8 | [Anonimni nacrt prilagodbe zadataka](D.8_anonimni-nacrt-prilagodbe.md) | nastavnik, stručni suradnik | 11 |
@@ -27,7 +27,7 @@ Nijedan dokument iz ove mape nije pravni savjet. Prije uporabe svaki uskladite s
 
 ## Licencija
 
-Predlošci su pod licencijom CC BY-NC 4.0 (v. [LICENCA.md](../../LICENCA.md)): prilagodite ih svojoj školi i podijelite s kolegama, uz navođenje knjige kao izvora. Hrvatska prilagodba ljestvice AIAS 2.1 (autori Mike Perkins, Jasper Roe, Leon Furze i Jason MacVaugh) nalazi se samo u knjizi, u poglavlju 15 i dodatku D; u spremištu je kartica zadatka koja se na nju oslanja.
+Predlošci su pod licencijom CC BY-NC 4.0 (v. [LICENCA.md](../../LICENCA.md)): prilagodite ih svojoj školi i podijelite s kolegama, uz navođenje knjige kao izvora. Hrvatska prilagodba ljestvice AIAS 2.1 (autori Mike Perkins, Jasper Roe, Leon Furze i Jason MacVaugh) nalazi se samo u knjizi, u poglavlju 15 i dodatku D; u spremištu je samo kartica zadatka koja se na nju oslanja.
 
 ## Povezano
 

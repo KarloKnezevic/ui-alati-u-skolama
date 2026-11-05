@@ -1,4 +1,4 @@
-# Poglavlje 16: kviz kao podatak
+# Poglavlje 16: Provjere, kvizovi i rubrike: vrednovanje za učenje
 
 Ovdje su prva tri pitanja Tomislavova kviza o razlomcima onako kako ih
 knjiga prikazuje u odjeljku o kvizu kao podatku: `kviz.json` zapisan prema

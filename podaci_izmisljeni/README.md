@@ -2,7 +2,7 @@
 
 Zajednički skupovi za vježbu koje rabi više poglavlja. Svi su izmišljeni:
 šifre ne pripadaju nikome, a tekstovi nisu prepisani iz stvarnih radova.
-CSV datoteke su u kodiranju UTF-8, s točkom-zarezom kao razdjelnikom (kao
+CSV datoteke su u kodiranju UTF-8, s točkom sa zarezom kao razdjelnikom (kao
 CSV iz hrvatskog Excela); u Google tablice uvozite ih preko
 Datoteka > Uvoz > Prijenos, uz automatsko otkrivanje razdjelnika.
 
@@ -16,7 +16,7 @@ Datoteka > Uvoz > Prijenos, uz automatsko otkrivanje razdjelnika.
 
 Podaci koje rabi samo jedno poglavlje stoje u njegovoj mapi:
 `ch19/rezultati_izmisljeni.csv` (rezultati kviza, 24 učenika),
-`ch23/ucenici_izmisljeni.csv` (razred 5.b, 30 šifri, staze i interesi),
+`ch23/ucenici_izmisljeni.csv` (razred 5. b, 30 šifri, staze i interesi),
 `ch23/zapisnik_izmisljeni.csv`, `ch26/listici_izmisljeni.txt` i
 `ch26/knjiznica/`. Stvarni podaci o učenicima ne idu ni ovamo ni u ijedan
 alat iz knjige bez školskog pravila, ni pod šiframa.

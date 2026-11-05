@@ -8,7 +8,7 @@
 - ☐ **Zabranjene radnje** navedene su u zadatku: prijave, obrasci, poruke, plaćanja, preuzimanja, brisanje.
 - ☐ **Odobravanje** je uključeno za svaki korak koji nešto mijenja, šalje ili prijavljuje; prekidač koji sve odobrava unaprijed ostaje isključen. Zahtjev čitate do kraja prije klika.
 - ☐ **Kada stati i pitati**: prijava, pristanak, tekst upućen agentu, proturječni podaci.
-- ☐ **Provjera rezultata**: svaki redak uspoređujete s izvorom i datumom objave i pregledavate popis otvorenih stranica.
+- ☐ **Provjera rezultata**: svaki redak uspoređujete s izvorom i datumom objave, a zatim pregledavate popis otvorenih stranica.
 - ☐ **Opoziv.** Znate gdje se pristup povlači: u postavkama asistenta i na stranici povezanih aplikacija na Googleovu ili Microsoftovu računu.
 
 ---
