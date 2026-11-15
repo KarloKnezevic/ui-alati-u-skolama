@@ -10,12 +10,14 @@
 
 [![ISBN](https://img.shields.io/badge/ISBN-978--953--47110--0--2-041966)](#kako-citirati)
 [![Knjiga](https://img.shields.io/badge/knjiga-PDF-093FFF)](https://github.com/KarloKnezevic/ui-alati-u-skolama/releases/latest)
+[![Prezentacija](https://img.shields.io/badge/prezentacija-201%20slajd-FF2020)](https://karloknezevic.github.io/ui-alati-u-skolama/prezentacija/)
 [![Stanje](https://img.shields.io/badge/stanje-studeni%202026.-FF2020)](STANJE_ALATA.md)
 [![Upiti](https://img.shields.io/badge/upiti-88-093FFF)](predlosci/upiti/README.md)
 [![Kôd](https://img.shields.io/badge/kôd-MIT-041966)](LICENSE)
 [![Sadržaj](https://img.shields.io/badge/predlošci-CC%20BY--NC%204.0-041966)](LICENCA.md)
 
 **[Preuzmite knjigu (PDF)](https://github.com/KarloKnezevic/ui-alati-u-skolama/releases/latest/download/Koristenje_UI_alata_u_skolama.pdf)** ·
+**[Interaktivna prezentacija](https://karloknezevic.github.io/ui-alati-u-skolama/prezentacija/)** ·
 [Stanje alata](STANJE_ALATA.md) ·
 [Ispravci](ISPRAVCI.md) ·
 [Prijavite pogrešku](https://github.com/KarloKnezevic/ui-alati-u-skolama/issues/new/choose)
@@ -40,10 +42,32 @@ VII, izmišljeni podaci za vježbu i materijali za sedam radionica za stručne
 aktive. Spremište je ujedno i **mrežni dodatak knjige**: ovdje se održava
 živa inačica dodatka A o stanju alata i popis ispravaka nakon objave.
 
+## Interaktivna prezentacija
+
+Knjigu možete najprije prelistati kao prezentaciju: **[otvorite je u
+pregledniku](https://karloknezevic.github.io/ui-alati-u-skolama/prezentacija/)**. Ima 201 slajd i vodi istim
+putem kao knjiga, od prve večeri s jezičnim modelom do agenata, MCP-a i
+modela na vlastitom računalu. Posljednja poglavlja (20–28) prikazana su
+najdetaljnije: na stotinjak slajdova primjer pokrećete sami, pa korak po
+korak pratite kako radi petlja agenta, kako tok u Power Automateu prolazi
+obrazac, što putuje u pozivu API-ja ili kako asistent zove alat preko
+MCP-a. Sve su to simulacije s izmišljenim podacima iz knjige; ništa se ne
+šalje na internet.
+
+<p align="center">
+  <a href="https://karloknezevic.github.io/ui-alati-u-skolama/prezentacija/"><img src="slike/prezentacija.jpg" alt="Prezentacija: petlja agenta na računalu i dva slajda u uspravnom prikazu za mobitel" width="100%"></a>
+</p>
+
+- **Na računalu:** strelice ili razmak za sljedeći korak, `F` za cijeli zaslon, `?` za popis tipki.
+- **Na mobitelu:** dodir ili povlačenje prstom. Svaki slajd ima i uspravni raspored, a kad okrenete mobitel, prezentacija ostaje na istom mjestu.
+- **Bez interneta:** prezentacija je jedna samostalna datoteka ([`prezentacija/index.html`](prezentacija/index.html)).
+  Spremite stranicu u pregledniku (Ctrl+S ili Cmd+S) i radit će i bez veze, pa je možete poslati kolegama ili pokrenuti na stručnom aktivu.
+
 ## Gdje početi
 
 | Želite… | Idite u | Treba vam |
 |---|---|---|
+| pregledati knjigu prije čitanja | [prezentacija](https://karloknezevic.github.io/ui-alati-u-skolama/prezentacija/) | preglednik, na računalu ili mobitelu |
 | upit iz knjige, bez prepisivanja | [`predlosci/upiti/`](predlosci/upiti/README.md) | bilo koji opći asistent |
 | školska pravila, izjavu o uporabi UI-ja, obavijest roditeljima | [`predlosci/dokumenti/`](predlosci/dokumenti/README.md) | Word ili uređivač teksta |
 | kontrolni popis za ispis | [`predlosci/kontrolni-popisi/`](predlosci/kontrolni-popisi/README.md) | pisač |
